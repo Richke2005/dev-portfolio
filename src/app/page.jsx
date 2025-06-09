@@ -1,17 +1,12 @@
 import React from "react";
 import styles from "./page.module.css";
-import Profile from "@/patterns/profile/profile.js"
+import Profile from "@/patterns/profile/profile.js";
 import profileData from "@/data/profile/profile";
-import Stack from '@mui/material/Stack';
-import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';
-import AlarmIcon from '@mui/icons-material/Alarm';
-import Button from '@mui/material/Button';
+
 
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
+  return <div className={styles.page}>
       <div className={styles.centralized}>
         <Profile 
           image={profileData.image}
@@ -31,9 +26,7 @@ export default function Home() {
             Bora trocar uma idéia ?!
           </p>
           </section>
-     
         </div>
       </div>
     </div>
-  );
 }

@@ -2,8 +2,7 @@ import React from "react";
 import Card from "../../components/cards/index.js";
 
 const Profile = ({image, name, bio, style, nameStyle, bioStyle, children}) => {
-    return (
-        <div style={style || styles.profile}>
+    return <div style={style || styles.profile}>
             <Card
                 image={image}
                 title={name}
@@ -15,7 +14,6 @@ const Profile = ({image, name, bio, style, nameStyle, bioStyle, children}) => {
             {children}
             </Card>
         </div>
-    );
 }
 
 const styles = {
