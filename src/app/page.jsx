@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./page.module.css";
-import Profile from "@/patterns/profile/profile.js";
-import profileData from "@/data/profile/profile";
+import Profile from "../patterns/profile/profile.jsx";
+import profileData from "../data/profile/profile.js";
 
 
 

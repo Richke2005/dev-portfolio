@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../../components/cards/index.js";
+import Card from "../../components/cards/index.jsx";
 
 const Profile = ({image, name, bio, style, nameStyle, bioStyle, children}) => {
     return <div style={style || styles.profile}>
