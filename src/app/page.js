@@ -18,20 +18,6 @@ export default function Home() {
           name={profileData.name} 
           bio={profileData.bio}
         >
-          <Stack direction="row" spacing={2}>
-            <IconButton aria-label="delete">
-              <DeleteIcon />
-            </IconButton>
-            <IconButton aria-label="delete" disabled color="primary">
-              <DeleteIcon />
-            </IconButton>
-            <IconButton color="secondary" aria-label="add an alarm">
-              <AlarmIcon />
-            </IconButton>
-          </Stack>
-          <Button 
-          variant="contained" 
-          color="secondary">Let's talk</Button>
         </Profile>
         
         <div className={styles.pageContent}>
