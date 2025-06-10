@@ -22,15 +22,37 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  align-items: center;
   max-width: 700px;
   padding: 30px;
 }
 
 .buttonContainer {
-   width: 100%;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsividade */
+/* 0 > x > 900 está nesse estilo */
+@media (max-width: 900px) {
+  .centralized {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContent {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 10px;
+    gap: 32px;
+  }
+  .rightContent {
+    padding: 10px 0;
+  }
 }

@@ -1,6 +1,12 @@
 :root {
   --background: #171717;
   --foreground: #ffffff;
+  --layer1: rgb(39, 40, 41);
+  --primary: rgb(145, 75, 241);
+  --secondary: rgb(0, 104, 26);
+  --thirdary: rgb(192, 77, 0);
+  --sucess: rgb(0, 104, 26);
+  --error: rgb(163, 3, 3);
 }
 
 /* @media (prefers-color-scheme: dark) {

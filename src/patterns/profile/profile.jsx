@@ -1,16 +1,18 @@
 import React from "react";
-import styles from "./style.js";
+import styles from "./profile.module.css";
 import Card from "../../components/cards/card.jsx";
+import cardStyle from "./style.js";
 
+//TODO: Refactor this component to use the new Card component with another style
 const Profile = ({image, name, bio, style, nameStyle, bioStyle, children}) => {
-    return <div style={style || styles.profile}>
+    return <div className={styles.profile} style={style}>
             <Card
                 image={image}
                 title={name}
                 text={bio}
-                cardStyle={styles.card}
-                titleStyle={nameStyle || styles.name}
-                textStyle={bioStyle || styles.bio}
+                cardStyle={cardStyle.card}
+                titleStyle={cardStyle.name}
+                textStyle={cardStyle.bio}
             >
             {children}
             </Card>

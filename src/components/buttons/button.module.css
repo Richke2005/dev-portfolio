@@ -1,0 +1,114 @@
+.primary {
+    background-color: var(--primary); /* purple */
+    color: var(--foreground);
+    border-color: var(--primary);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.primary:hover {
+    background-color: var(--primary);
+    color: var(--foreground);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.secondary {
+    background-color: var(--secondary); /* green */
+    color: var(--foreground);
+    border-color: var(--secondary);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.secondary:hover {
+    background-color: var(--secondary); /* green */
+    color: var(--foreground);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.thirdary{
+    background-color: var(--thirdary);
+    color: var(--foreground);
+    border-color: var(--thirdary);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.thirdary:hover{
+    background-color: var(--thirdary);
+    color: var(--foreground);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.sucess{
+    background-color: var(--sucess);
+    color: var(--foreground);
+    border-color: var(--sucess);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sucess:hover{
+    background-color: var(--sucess);
+    color: var(--foreground);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.contained{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.outlined{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.outdashed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    padding: 5px;
+    color: var(--foreground);
+    background-color: var(--primary);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.profile {
+    position: sticky;
+    margin-Top: 50px;
+    top: 20px;
+    width: 425px;
+    height: 750px;
+    padding: 30px;
+}
+
+/* Responsividade */
+/* 0 > x > 900 está nesse estilo */
+@media (max-width: 900px) {
+  .profile {
+    position: relative;
+    margin-Top: 0;
+    width: 100%;
+  }
+}
+  
+.card {
+    width: 100%;
+    height: 100%;
+    background-Color: var(--layer1);
+    border-Radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.name {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.bio {
+    font-size: 20px;
+    color: rgb(216, 224, 226);
+}

@@ -3,6 +3,8 @@ const styles =  {
         display: "flex",
         backgroundColor: "white",
         flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
         padding: "20px",
         borderRadius: "20px",
         textAlign: "center",
@@ -13,6 +15,7 @@ const styles =  {
     image: {
         borderRadius: "20px",
         width: "100%",
+        maxWidth: "350px",
         maxHeight: "300px",
         objectFit: "cover",
         marginBottom: "20px"
