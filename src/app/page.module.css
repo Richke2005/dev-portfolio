@@ -2,7 +2,6 @@
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
   min-height: 100svh;
@@ -18,12 +17,20 @@
   justify-content: center;
 }
 
-.pageContent {
+.rightContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
   max-width: 700px;
   padding: 30px;
+}
+
+.buttonContainer {
+   width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

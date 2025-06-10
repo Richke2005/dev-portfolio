@@ -1,22 +1,3 @@
-import React from "react";
-import Image from "next/image";
-
-const Card = ({image, title, text, style, titleStyle, textStyle, children}) =>{
-    return <div style={style || styles.card}>
-            {image && <Image src={image} alt={title} style={styles.image}/>}
-            <h2 style={titleStyle || styles.title}>
-            {title}
-            </h2>
-
-            <p style={textStyle || styles.text}>
-            {text}
-            </p>
-            
-            {children && <div style={{marginTop: "16px"}}>{children}</div>}
-           
-    </div>
-}
-
 const styles =  {
     card: {
         display: "flex",
@@ -49,4 +30,5 @@ const styles =  {
         marginBottom: "16px"
     }
 }
-export default Card;
+
+export default styles;

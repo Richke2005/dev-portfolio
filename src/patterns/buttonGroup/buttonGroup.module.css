@@ -1,0 +1,13 @@
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-Color:  rgb(39, 40, 41);
+    border-Radius: 20px;
+}
+
+.icon {
+    list-style: none;
+}

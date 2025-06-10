@@ -1,0 +1,23 @@
+.button {
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
+.active{
+    padding: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: purple;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
