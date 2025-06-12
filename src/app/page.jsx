@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./page.module.css";
 import Profile from "../patterns/profile/profile.jsx";
 import profileData from "../data/profile/profile.js";
-import Button from "@/components/buttons/button.jsx";
-import LinkGroup from "@/patterns/socialLinks/linkGroup";
 import TopBar from "@/patterns/topBar/topBar";
+import Button from "@/components/buttons/button.jsx";
+import LinkGroup from "@/patterns/socialLinks/linkGroup.jsx";
+import Section from "@/components/section/section.jsx";
+import ImageCard from "@/components/cards/imageCard/imageCard.jsx";
+import image from "../../public/images/appImage.png";
+const tags = ["React Native", "express.js", "MongoDB"]
 
 
 export default function Home() {
@@ -21,6 +25,8 @@ export default function Home() {
           name={profileData.name} 
           bio={profileData.bio}
         >
+          {//Todo try to modularize this component to use the new Card component
+          }
           <div style={{ padding: "5px", display: "flex", flexDirection: "column", alignItems: "center"}}>
             <div>
               <LinkGroup links={profileData.socialMedias} />
@@ -40,21 +46,17 @@ export default function Home() {
         </Profile>
 
         <div className={styles.rightContent}>
-          <section className="presentation">
-          <h2 style={{color: "white", fontSize: "50px"}}>
-            Trasformando Ideias Em Soluções <strong style={{color: "var(--primary"}}>Digitais</strong>
-          </h2>
-          <p>
-            Sou técnico em Desenvolvimento de Sistemas e atualmente curso Ciência da Computação. Amo tecnologia e estou sempre em busca de novos aprendizados e desafios que me permitam crescer tanto tecnicamente quanto como profissional.
-            Atuo com foco em organização, dedicação e responsabilidade.
-            Bora trocar uma idéia ?!
-          </p>
-
-          </section>
-
-          <section style={{ height: "1000px"}}>
-           
-          </section>
+          
+          <Section title={" Trasformando Ideias Em Soluções Digitais"} >
+            {profileData.about}
+          </Section>
+          <Section title={"Projetos Recentes"} isAnimated={true}>
+            <ImageCard
+             image={image} 
+             title={"Pathfinders App"}
+             tags={tags}/>
+          </Section>
+          <div style={{height: 1000}}></div>
         </div>
       </div>
     </div>

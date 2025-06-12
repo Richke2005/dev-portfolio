@@ -8,6 +8,15 @@ const profile = {
     name: "Richard Carvalho",
     image: image,
     bio: "FullStack Software Developer São Paulo, Brasil",
+    about: "Sou técnico em Desenvolvimento de Sistemas e atualmente curso Ciência da Computação. Amo tecnologia e estou sempre em busca de novos aprendizados e desafios que me permitam crescer tanto tecnicamente quanto como profissional. Atuo com foco em organização, dedicação e responsabilidade. Bora trocar uma idéia ?!",
+    city: "São Paulo",
+    country: "Brasil",
+    education: [{
+        institution: "Universidade Presbiteriana Mackenzie",
+        degree: "Bachelor of Science in Computer Science",
+        startYear: 2022,
+        endYear: 2025
+    }],
     socialMedias: [
         {
             name: "Instagram",
@@ -29,23 +38,7 @@ const profile = {
             url:"mailto:richardke18@gmail.com",
             icon: EmailIcon
         }
-    ],
-    city: "São Paulo",
-    country: "Brasil",
-    skills: [
-        "JavaScript",
-        "React",
-        "Next.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "PostgreSQL",
-        "HTML",
-        "CSS",
-        "Tailwind CSS",
-        "Git",
-        "GitHub"
-    ],
+    ]
 }
 
 export default profile;
