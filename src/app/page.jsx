@@ -13,11 +13,7 @@ const tags = ["React Native", "express.js", "MongoDB"]
 
 export default function Home() {
   return <div className={styles.page}>
-      <div className={styles.buttonContainer}>
-        <div style={{width: "300px", height: "50px"}}>
-          <TopBar />
-        </div>
-      </div>
+      <TopBar />
         
       <div className={styles.centralized}>
         <Profile 
@@ -46,14 +42,22 @@ export default function Home() {
         </Profile>
 
         <div className={styles.rightContent}>
-          
-          <Section title={" Trasformando Ideias Em Soluções Digitais"} >
+          <Section title={" Trasformando Ideias Em Soluções Digitais"}>
             {profileData.about}
           </Section>
           <Section title={"Projetos Recentes"} isAnimated={true}>
             <ImageCard
-             image={image} 
-             title={"Pathfinders App"}
+            title={"Pathfinders App"}
+             coverImage={image} 
+             projectImages={[image, image, image]}
+             
+             tags={tags}/>
+
+            <ImageCard
+            title={"Pathfinders App"}
+             coverImage={image} 
+             projectImages={[image, image, image]}
+             
              tags={tags}/>
           </Section>
           <div style={{height: 1000}}></div>

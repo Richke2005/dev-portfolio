@@ -1,4 +1,7 @@
 .sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     transform: translateX(500px);
     transition:
         visibility 0.8s cubic-bezier(1, 0, 0, 1),

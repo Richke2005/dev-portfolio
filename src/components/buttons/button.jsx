@@ -16,18 +16,18 @@ import { Tooltip } from '@mui/material';
  * @param {React.ReactNode} props.children - The content (usually an icon) to display inside the button.
  * @returns {JSX.Element} The rendered IconButton component.
  */
-export default function Button({name = "Button", color = "primary", shape = "contained", disabled = false, isActive = false, style, children}){
+export default function Button({name = "Button", color = "primary", shape = "contained", onClick, disabled = false, isActive = false, style, children}){
   const [stateButton, setIsActive] = React.useState(isActive);
 
-  function handleClick() {
-    setIsActive(!stateButton);
+  const handleClick = ()=> {
+    onClick()
   }
 
   return <Tooltip title={name}>
       <button
         onClick={handleClick}
         disabled={disabled}
-        className={`${styles[color]} ${styles[shape]} ${stateButton ? styles.active : ''}`}
+        className={`${styles[color]} ${styles[shape]} ${isActive ? styles.active : ''}`}
         style={style}
       >
         {children}

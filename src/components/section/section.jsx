@@ -19,8 +19,7 @@ const Section = ({ title, children, style, isAnimated, className }) => {
     const handleScroll = () => {
         const top = window.scrollY // Obter a posição vertical da rolagem
         const sectionPos = childRef.current.offsetTop;
-        if(top >= sectionPos*2/3){
-            console.log(top)
+        if(top >= sectionPos-200){
             setActiveSection(styles.activeSection)
         }
 

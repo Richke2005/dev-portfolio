@@ -25,14 +25,6 @@
   padding: 30px;
 }
 
-.buttonContainer {
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Responsividade */
 /* 0 > x > 900 está nesse estilo */
 @media (max-width: 900px) {
