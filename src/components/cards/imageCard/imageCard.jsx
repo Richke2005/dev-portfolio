@@ -6,8 +6,9 @@ import Button from "@/components/buttons/button.jsx";
 import CustomizedDialogs from "@/components/dialogs/customizedDialog";
 import CustomizedSlider from "@/components/sliders/customizedSlider";
 
-const ImageCard = ({coverImage, projectImages, tags, title})=>{
+const ImageCard = ({title, description, tags, coverImage, projectImages, size })=>{
     const [open, setOpen] = React.useState(false);
+    const defaultSize = size || "big";
 
     const handleClickOpen = () => {
       setOpen(true);
@@ -17,7 +18,7 @@ const ImageCard = ({coverImage, projectImages, tags, title})=>{
     };
 
     return <React.Fragment>
-     <div onClick={handleClickOpen} className={styles.imageCard}>
+     <div onClick={handleClickOpen} className={`${styles.imageCard} ${styles[defaultSize]}`}>
         <Image src={coverImage} alt={title} className={styles.image}/>
         <div className={styles.cardTitle}>
             <h2>{title}</h2>
@@ -28,14 +29,14 @@ const ImageCard = ({coverImage, projectImages, tags, title})=>{
                  name="Technologie" 
                  shape="contained"
                  color="primary"
-                 style={{marginLeft: "10px"}}>
+                 style={{marginLeft: "10px", marginBottom: "10px"}}>
                 {tag}
             </Button>))}
         </div>
     </div>
       <CustomizedDialogs 
         title={title}
-        description={`This project showcases the use of ${tags.join(", ")} technologies.`}
+        description={description}
         open={open} 
         onClose={handleClose}>
         <CustomizedSlider

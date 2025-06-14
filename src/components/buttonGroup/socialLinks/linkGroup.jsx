@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./linkGroup.module.css";
-import LinkButton from "@/components/buttons/linkButton";
+import LinkButton from "@/components/buttons/linkButton.jsx";
 import PropTypes from "prop-types";
 
-export default function LinkGroup({ links }) {
+function LinkGroup({ links }) {
   return (
     <ul className={styles.linkGroup}>
       {links.map((link, index) => (
@@ -29,3 +29,5 @@ LinkGroup.propTypes = {
 LinkGroup.defaultProps = {
   links: []
 };
+
+export default LinkGroup;

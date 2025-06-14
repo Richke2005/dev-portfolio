@@ -2,7 +2,6 @@
     position: relative;
     margin-top: 20px;
     margin-bottom: 30px;
-    width: 100%;
     min-width: 260px;
     min-height: 300px;
     z-index: 0;
@@ -16,6 +15,18 @@
     scale: 1.06;
     transition: 
         scale 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.small{
+    width: 20%;
+}
+
+.medium{
+    width: 47%;
+}
+
+.big{
+    width: 100%;
 }
 
 .image {
@@ -36,7 +47,9 @@
 }
 
 .tags{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     z-index: 2;
     bottom: 10px;

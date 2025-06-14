@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./profile.module.css";
-import Card from "../../components/cards/card/card.jsx";
+import Card from "../card/card.jsx";
 import cardStyle from "./style.js";
 
 //TODO: Refactor this component to use the new Card component with another style

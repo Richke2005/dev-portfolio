@@ -1,20 +1,18 @@
 import React from "react";
 import styles from "./page.module.css";
-import Profile from "../patterns/profile/profile.jsx";
-import profileData from "../data/profile/profile.js";
-import TopBar from "@/patterns/topBar/topBar";
+import Profile from "../components/cards/profileCard/profile.jsx";
+import TopBar from "@/components/topBar/topBar.jsx";
 import Button from "@/components/buttons/button.jsx";
-import LinkGroup from "@/patterns/socialLinks/linkGroup.jsx";
-import Section from "@/components/section/section.jsx";
-import ImageCard from "@/components/cards/imageCard/imageCard.jsx";
-import image from "../../public/images/appImage.png";
-const tags = ["React Native", "express.js", "MongoDB"]
+import LinkGroup from "@/components/buttonGroup/socialLinks/linkGroup.jsx";
+import profileData from "../data/profile/profile.js";
+import Projects from "@/patterns/projects/projects";
+import About from "@/patterns/about/about";
+
 
 
 export default function Home() {
   return <div className={styles.page}>
       <TopBar />
-        
       <div className={styles.centralized}>
         <Profile 
           image={profileData.image}
@@ -42,25 +40,8 @@ export default function Home() {
         </Profile>
 
         <div className={styles.rightContent}>
-          <Section title={" Trasformando Ideias Em Soluções Digitais"}>
-            {profileData.about}
-          </Section>
-          <Section title={"Projetos Recentes"} isAnimated={true}>
-            <ImageCard
-            title={"Pathfinders App"}
-             coverImage={image} 
-             projectImages={[image, image, image]}
-             
-             tags={tags}/>
-
-            <ImageCard
-            title={"Pathfinders App"}
-             coverImage={image} 
-             projectImages={[image, image, image]}
-             
-             tags={tags}/>
-          </Section>
-          <div style={{height: 1000}}></div>
+          <About/>
+          <Projects/>
         </div>
       </div>
     </div>

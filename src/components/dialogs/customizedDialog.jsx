@@ -19,11 +19,28 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
 }));
 
 function CustomizedDialogs({title, open, onClose, description, children}) {
-  return <BootstrapDialog
+  return (
+    <BootstrapDialog
       onClose={onClose}
       aria-labelledby="customized-dialog-title"
       open={open}
-      color='#ffff'
+      slotProps={{
+        paper: {
+          sx: {
+            backgroundColor: 'var(--foreground)',
+            borderRadius: '20px',
+            width: '100%',
+            maxWidth: '800px',
+          },
+        },
+        backdrop: {
+          sx: {
+            backdropFilter: 'blur(5px)',
+            position: 'fixed',
+            transition: 'background-color 0.3s ease'
+          },
+        },
+      }}
     >
       <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
         {title}
@@ -38,20 +55,22 @@ function CustomizedDialogs({title, open, onClose, description, children}) {
           color: theme.palette.grey[500],
         })}
       >
-        <CloseIcon/>
+        <CloseIcon />
       </IconButton>
       <DialogContent dividers>
         {children}
+        <h2 style={{ marginBottom: "20px" }}>📝 Descrição Do <strong style={{ color: "var(--primary)" }}>Projeto</strong></h2>
         <Typography gutterBottom>
           {description}
         </Typography>
       </DialogContent>
       <DialogActions>
-        <Button autoFocus onClick={onClose}>
+        <Button autoFocus onClick={onClose} sx={{ color: 'var(--layer1)' }}>
           Ok
         </Button>
       </DialogActions>
     </BootstrapDialog>
+  );
 }
 
 export default CustomizedDialogs;

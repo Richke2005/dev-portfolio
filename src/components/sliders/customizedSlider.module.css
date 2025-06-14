@@ -5,6 +5,7 @@
 
 .slideContent{
   width: 95%;
+  max-height: 390px;
   text-align: center;
   font-size: 18px;
   margin-bottom: 30px;
