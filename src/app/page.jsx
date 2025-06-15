@@ -7,12 +7,13 @@ import LinkGroup from "@/components/buttonGroup/socialLinks/linkGroup.jsx";
 import profileData from "../data/profile/profile.js";
 import Projects from "@/patterns/projects/projects";
 import About from "@/patterns/about/about";
-
+import Technologies from "@/patterns/technologies/technologies";
+import Education from "@/patterns/education/education.jsx";
+import Contact from "@/patterns/contact/contact";
 
 
 export default function Home() {
   return <div className={styles.page}>
-      <TopBar />
       <div className={styles.centralized}>
         <Profile 
           image={profileData.image}
@@ -42,6 +43,9 @@ export default function Home() {
         <div className={styles.rightContent}>
           <About/>
           <Projects/>
+          <Technologies/>
+          <Education/>
+          <Contact/>
         </div>
       </div>
     </div>

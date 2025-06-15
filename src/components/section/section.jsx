@@ -12,14 +12,14 @@ const Section = ({ title, children, style, isAnimated, className }) => {
         window.addEventListener('scroll', handleScroll, { passive: true }); // Anexar o ouvinte de evento
         // Remover o ouvinte de evento no desmontagem do componente (limpeza)
         return () => {
-        window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []); 
 
     const handleScroll = () => {
         const top = window.scrollY // Obter a posição vertical da rolagem
         const sectionPos = childRef.current.offsetTop;
-        if(top >= sectionPos-200){
+        if(top >= sectionPos-250){
             setActiveSection(styles.activeSection)
         }
 
