@@ -11,9 +11,18 @@ export default function ContacForm({onChange}) {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const handleSendEmail = ()=> {
+    const emailService = new EmailService();
+    emailService.emailFrom(name, email, message)
+    .then(response => {
+      alert("Email Enviado Com Sucesso!");
+    }).catch(error => {
+      console.error(`Erro ao enviar email: ${error}`);
+    });
+  }
+
   return (
     <Box
-      component="form"
       sx={{
         width: "100%",
         padding: 5,
@@ -69,19 +78,7 @@ export default function ContacForm({onChange}) {
       />
       <div style={{marginTop: "20px", width: "100%", display: "flex", justifyContent: "center" }}>
         <Button
-        onClick={() =>{
-          const emailService = new EmailService();
-          emailService.emailFrom(name, email, message)
-            .then(response => {
-              alert("Email Enviado Com Sucesso!");
-              setName('');
-              setEmail('');
-              setMessage('');
-            })
-            .catch(error => {
-              alert.error("Error sending email:", error);
-            });
-        }}
+        onClick={handleSendEmail}
         shape="contained"
         >Enviar</Button>
       </div>

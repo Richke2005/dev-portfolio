@@ -40,7 +40,7 @@ export default function CustomLinearLabel({initialValue = 0, finalvalue}) {
         if(prevProgress < finalvalue) {
           setProgress(prevProgress + 5);
         }
-        return prevProgress;
+        return finalvalue;
       });
     }, 100);
     return () => {
