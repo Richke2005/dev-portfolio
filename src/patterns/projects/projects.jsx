@@ -19,7 +19,8 @@ export default function Projects() {
                   width: window.innerWidth,
                   height: window.innerHeight
               });
-          }
+            }
+            handleResize(); // Set initial size
   
           window.addEventListener("resize", handleResize);
         

@@ -25,13 +25,16 @@ const ImageCard = ({title, description, tags, coverImage, projectImages, size })
         </div>
         <div className={styles.tags}>
             {tags && tags.map(tag=>(
-                <Button key={tag}
-                 name="Technologie" 
-                 shape="contained"
-                 color="primary"
-                 style={{marginLeft: "10px", marginBottom: "10px"}}>
+              <div key={tag} style={{marginLeft: "10px", marginBottom: "10px"}}>
+                <Button key={`Button: ${tag}`}
+                  name="Technologie" 
+                  shape="contained"
+                  color="primary"
+                  >
                 {tag}
-            </Button>))}
+                </Button>
+              </div>
+               ))}
         </div>
     </div>
       <CustomizedDialogs 

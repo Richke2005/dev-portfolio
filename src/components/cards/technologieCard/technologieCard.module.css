@@ -1,0 +1,27 @@
+.technologieCard{
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--layer1);
+    margin: 5px;
+    transition:
+        background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.technologieCard:hover{
+    background-color: var(--primary);
+    transition:
+        background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.progressContainer{
+    width: 250px; 
+    height: 20px; 
+    display: flex; 
+    align-items: center;
+}
+
