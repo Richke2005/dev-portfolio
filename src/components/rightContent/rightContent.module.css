@@ -8,10 +8,6 @@
     max-width: 100%;
     padding: 20px 10px;
   }
-
-    body {
-    overflow-x: hidden;
-    }
 }
 
 @media (max-width: 600px) {
