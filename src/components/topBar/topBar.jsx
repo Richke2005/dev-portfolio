@@ -1,7 +1,6 @@
-"use client";
 import React from "react"
 import styles from "./topBar.module.css";
-import Button from "@/components/buttons/button.jsx";
+import LinkButton from "../buttons/linkButton";
 import HomeIcon from '@mui/icons-material/Home';
 import FolderIcon from '@mui/icons-material/Folder';
 import BuildIcon from '@mui/icons-material/Build';
@@ -10,93 +9,70 @@ import NewspaperIcon from '@mui/icons-material/Newspaper';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function TopBar() {
-    const[mySectionsPos, setSections] = React.useState([]);
-    const [windowWidth, setWindowWidth] = React.useState({
-        width: undefined,
-        height: undefined
-    });
-
-    React.useEffect(()=>{
-        function handleResize() {
-            setWindowWidth({
-                width: window.innerWidth,
-                height: window.innerHeight
-            });
-        }
-
-        window.addEventListener("resize", handleResize);
-
-        const downToElements = Array.from(document.getElementsByTagName("section"));
-        setSections(downToElements.map((section)=> section.offsetTop));
-        return () => window.removeEventListener("resize", handleResize);
-    },[windowWidth]);
-
-    function downToPos(y){
-        window.scrollTo({top: y, behavior: "smooth"})
-    }
-
     return<div className={styles.topBarContainer}>
             <div style={{height: "50px"}}>
             <ul className={styles.topBar}>
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                        href="/"
                         color="primary" 
                         shape="transparent" 
                         name="Home"  
                         isActive={false}>
                     <HomeIcon />
-                    </Button>
+                    </LinkButton>
                 </li>
 
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                    href="/projects"
                         color="primary" 
                         shape="transparent" 
-                        name="Projetos" 
-                        onClick={()=>downToPos(mySectionsPos[1])}>
+                        name="Projetos">
                     <FolderIcon />
-                    </Button>
+                    </LinkButton>
                 </li>
 
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                    href="/skills"
                         color="primary" 
                         shape="transparent" 
-                        name="Skills"
-                        onClick={()=>downToPos(mySectionsPos[2])}>
+                        name="Skills">
                     <BuildIcon />
-                    </Button>
+                    </LinkButton>
                     
                 </li>
 
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                        href="/education"
                         color="primary"
                         shape="transparent" 
-                        name="Formação"
-                        onClick={()=>downToPos(mySectionsPos[3])}>
+                        name="Formação">
                     <SchoolIcon />
-                    </Button>
+                    </LinkButton>
                 </li>
 
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                        href="/blog"
                         color="primary"
                         shape="transparent" 
                         name="Blog"
                         >
                     <NewspaperIcon />
-                    </Button>
+                    </LinkButton>
                 </li>
 
                 <li className={styles.icon}>
-                    <Button 
+                    <LinkButton 
+                        href="/contact"
                         color="primary"
                         shape="transparent" 
-                        name="Contato"
-                        onClick={()=>downToPos(mySectionsPos[4])}>
+                        name="Contato">
                     <EmailIcon />
-                    </Button>
+                    </LinkButton>
                 </li>
             </ul>
         </div>

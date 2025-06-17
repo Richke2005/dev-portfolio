@@ -9,9 +9,10 @@ const profile = {
     name: "Richard Carvalho",
     image: image,
     bio: "FullStack Software Developer",
-    about: "Sou técnico em Desenvolvimento de Sistemas e atualmente curso Ciência da Computação. Amo tecnologia e estou sempre em busca de novos aprendizados e desafios que me permitam crescer tanto tecnicamente quanto como profissional. Atuo com foco em organização, dedicação e responsabilidade. Bora trocar uma idéia ?!",
+    about: `Desenvolver vai muito além de escrever código — é entender pessoas, resolver problemas e criar soluções que fazem sentido. Sou técnico em Desenvolvimento de Sistemas, estudo Ciência da Computação e estou sempre em busca de novos aprendizados. Quer tirar sua ideia do papel? Fica à vontade pra me chamar!`,
     city: "São Paulo",
     country: "Brasil",
+    resumeLink: "https://drive.google.com/file/d/16nNGXQvJuirQ95WckVPNTfJ3A3mgXQza/view?usp=sharing",
     socialMedias: [
         {
             name: "Instagram",

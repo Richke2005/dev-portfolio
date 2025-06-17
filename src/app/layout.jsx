@@ -2,6 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/topBar/topBar.jsx";
 import Footer from "@/components/Footer/footer.jsx";
+import Profile from "../components/cards/profileCard/profile.jsx";
+import LinkButton from "@/components/buttons/linkButton.jsx";
+import LinkGroup from "@/components/buttonGroup/socialLinks/linkGroup.jsx";
+import profileData from "../data/profile/profile.js";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +28,37 @@ export default function RootLayout({ children }) {
   return <html lang="pt-br" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}> 
         <TopBar />
-        {children}
+        <div className={'page'}>
+          <div className={'centralized'}>
+              <Profile 
+              image={profileData.image}
+              name={profileData.name} 
+              bio={profileData.bio}
+              country={profileData.country}
+              city={profileData.city}
+            >
+              {//Todo try to modularize this component to use the new Card component
+              }
+              <div style={{ padding: "5px", display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <div>
+                  <LinkGroup links={profileData.socialMedias} />
+                </div>
+
+                <div style={{marginTop: "70px"}}>
+                  <LinkButton 
+                  href={profileData.resumeLink}
+                    color="primary" 
+                    shape="contained" 
+                    name="Currículo"
+                  >
+                    Baixar Currículo
+                  </LinkButton>
+                </div>
+              </div>
+            </Profile>
+            {children}
+          </div>
+        </div>
         <Footer />
       </body>
     </html>

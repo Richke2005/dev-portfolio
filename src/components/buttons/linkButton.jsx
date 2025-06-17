@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './button.module.css';
+import Link from 'next/link';
 import { Tooltip } from '@mui/material';
 
 /**
@@ -18,13 +19,13 @@ import { Tooltip } from '@mui/material';
  */
 export default function LinkButton({name = "Button", color = "primary", shape = "contained", href, children}){
   return <Tooltip title={name}>
-      <a
+      <Link
         href={href}
         className={`${styles[color]} ${styles[shape]}`}
         style={{ color: color }}
       >
         {children}
-      </a>
+      </Link>
   </Tooltip>
 }
 

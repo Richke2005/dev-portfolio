@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import styles from "./imageCard.module.css";
 import Button from "@/components/buttons/button.jsx";
-import CustomizedDialogs from "@/components/dialogs/customizedDialog";
-import CustomizedSlider from "@/components/sliders/customizedSlider";
+import CustomizedDialogs from "@/components/dialogs/customizedDialog.jsx";
+import CustomizedSlider from "@/components/sliders/normalSlider/normalSlider.jsx";
 
 const ImageCard = ({title, description, tags, coverImage, projectImages, size })=>{
     const [open, setOpen] = React.useState(false);

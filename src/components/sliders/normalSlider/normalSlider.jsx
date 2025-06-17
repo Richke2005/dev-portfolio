@@ -8,7 +8,7 @@ import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import styles from "./customizedSlider.module.css";
+import styles from "../customizedSlider.module.css";
 
 
 /**
@@ -24,10 +24,9 @@ function CustomizedSlider({ images = [], components = [], slidesPerView = 1, ...
   return (
     <Swiper
       {...props}
-      style={{ width: '100%' }}
       slidesPerView={slidesPerView}
       modules={[Navigation]}
-      className="mySwiper"
+      className={styles.swiperWrapper}
     >
       {images && images.length > 0 ? (
         images.map((image, index) => (

@@ -4,7 +4,7 @@ import profileData from '@/data/profile/profile.js';
 
 export default function About() {
     return (
-        <Section title={" Trasformando Ideias Em Soluções Digitais"}>
+        <Section title={" Soluções Digitais Sob Medida, com Paixão por Tecnologia"}>
             {profileData.about}
         </Section>
     );

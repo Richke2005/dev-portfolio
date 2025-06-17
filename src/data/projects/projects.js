@@ -1,55 +1,58 @@
-import Image from "../../../public/images/projects/appImage.png";
+import MyClubCover from "../../../public/images/projects/myClubApp/cover.png";
+import SGECover from "../../../public/images/projects/SGE/cover.png";
+import SGECover2 from "../../../public/images/projects/SGE/cover2.png";
+import SGECover3 from "../../../public/images/projects/SGE/cover3.png";
 import SkillTechCover from "../../../public/images/projects/skillTechHub/cover.png";
 import MongoCover from "../../../public/images/projects/mongoAPI/cover.png";
+import FightingCarCover from "../../../public/images/projects/fightingCar/cover.png";
 
 const projects = [
+      {
+        title: "My Club App",
+        description: `O projeto visa facilitar a organização e a logística da comunidade de Desbravadores em uma igreja, por meio de um aplicativo móvel. A ferramenta permite o acompanhamento individual do progresso dos membros em suas classes, unidades e clube, sem substituir, mas complementando o trabalho já realizado. Além disso, a plataforma contará com uma comunidade de clubes para compartilhamento de atividades e abordagens sobre especialidades.`,
+        coverImage: MyClubCover,
+        projectImages: [MyClubCover],
+        tags: ["React Native", "Paper", "express.js", "node.js", "MongoDB"],
+        link: ""
+    },
     {
-        title: "Pathfinders App",
+        title: "Sistema de Gestão Escolar",
         description: "The project aims to simplify the organizational and logistical processes of the Pathfinders community in a church. It consists of a mobile application that facilitates interaction between Pathfinders and their classes, units, and club, allowing for the visualization and projection of progress in various activities. The app does not seek to replace but rather to enhance the existing work by providing individual tracking throughout the year. Additionally, the platform will include a community of clubs, allowing members to share activities and different approaches to specialties.",
-        coverImage: Image,
-        projectImages: [Image, Image, Image],
-        tags: ["React Native", "express.js", "MongoDB"],
+        coverImage: SGECover,
+        projectImages: [SGECover, SGECover2, SGECover3],
+        tags: ["Django", "Mysql", "BootsTrap", "HTML5", "CSS", "JavaScript"],
         link: ""
     },
     {
         title: "Skilltech Hub",
-        description: "A mobile application designed to help users navigate through various paths and trails, providing real-time updates and information.",
+        description: `A plataforma de treinamento industrial SkillTechHub é um sistema virtual de aprendizado que tem como objetivo capacitar profissionais para atuarem em ambientes industriais. Através dela, é possível simular situações reais de trabalho, proporcionando um treinamento mais eficaz e seguro para seus colaboradores. A plataforma é composta por uma interface interativa e intuitiva, que permite aos usuários vivenciarem diferentes cenários e desafios. Ela também conta com conteúdo teóricos e práticos, além de recursos audiovisuais que auxiliam no aprendizado.`,
         coverImage: SkillTechCover,
-        projectImages: [SkillTechCover, Image, Image],
+        projectImages: [SkillTechCover],
         tags: ["HTML5", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
         link: ""
     },
     {
-        title: "Mongo API",
-        description: "Este projeto consiste no desenvolvimento de uma API utilizando o banco de dados MongoDB, aproveitando o modelo NoSQL schema-less que ele oferece. A API foi projetada para proporcionar flexibilidade no armazenamento de dados, permitindo alterações na estrutura sem a necessidade de redefinir esquemas rígidos. Esse modelo é ideal para lidar com dados heterogêneos ou em constante evolução.",
+        title: "Schemaless API",
+        description: `Este projeto consiste no desenvolvimento de uma API utilizando o banco de dados MongoDB, aproveitando o modelo NoSQL schema-less que ele oferece. A API foi projetada para proporcionar flexibilidade no armazenamento de dados, permitindo alterações na estrutura sem a necessidade de redefinir esquemas rígidos. Esse modelo é ideal para lidar com dados heterogêneos ou em constante evolução.
+
+        A API será responsável por gerenciar operações CRUD (Create, Read, Update, Delete) de maneira eficiente, com foco na escalabilidade e na simplicidade na integração com outros sistemas. Além disso, boas práticas de segurança e desempenho serão implementadas para garantir a robustez do sistema.`,
         coverImage: MongoCover,
-        projectImages: [MongoCover, Image, Image],
-        tags: ["React Native", "express.js", "MongoDB"],
-        link: ""
-    },
-    {
-        title: "Pathfinders App",
-        description: "A mobile application designed to help users navigate through various paths and trails, providing real-time updates and information.",
-        coverImage: Image,
-        projectImages: [Image, Image, Image],
-        tags: ["React Native", "express.js", "MongoDB"],
-        link: ""
-    },
-    {
-        title: "Pathfinders App",
-        description: "A mobile application designed to help users navigate through various paths and trails, providing real-time updates and information.",
-        coverImage: Image,
-        projectImages: [Image, Image, Image],
-        tags: ["React Native", "express.js", "MongoDB"],
+        projectImages: [MongoCover],
+        tags: ["MVC", "express.js", "MongoDB", "mongoose"],
         link: ""
     },
 
     {
-        title: "Pathfinders App",
-        description: "A mobile application designed to help users navigate through various paths and trails, providing real-time updates and information.",
-        coverImage: Image,
-        projectImages: [Image, Image, Image],
-        tags: ["React Native", "express.js", "MongoDB"],
+        title: "Arduino Fighting Car",
+        description: `O projeto "Arduino Fighting Car" é uma iniciativa educacional que combina mecânica, eletrônica e programação para criar um carro de combate controlado remotamente. O objetivo é desenvolver um protótipo funcional que possa ser utilizado em competições, treinamentos e demonstrações técnicas.
+
+        Objetivos do Projeto: 
+        proporcionar uma plataforma prática para o aprendizado de conceitos de mecatrônica,
+        explorar novas tecnologias e métodos de controle remoto e
+        participar de competições de robótica e mostrar as capacidades do protótipo.`,
+        coverImage: FightingCarCover,
+        projectImages: [FightingCarCover],
+        tags: ["Arduino", "C++", "Electronics", "Robotics", "Mechanical"],
         link: ""
     }
 ]
