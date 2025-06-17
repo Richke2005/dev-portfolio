@@ -8,7 +8,7 @@ export default function ExperienceCard({ icon, title, subTitle, desc, period, ca
     return(
         <div className={styles.experienceCard}>
             <div>
-                {period}
+                <p>{period}</p> 
             </div>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start", width: "100%" }}>
                 {icon &&  <Image src={icon} alt={title} style={{ width: "50px", height: "50px", borderRadius: "50%", marginRight: "20px" }} />}

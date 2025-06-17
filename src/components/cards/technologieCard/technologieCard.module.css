@@ -19,9 +19,21 @@
 }
 
 .progressContainer{
-    width: 250px; 
+    min-width: 200px;
     height: 20px; 
     display: flex; 
     align-items: center;
 }
 
+@media (max-width: 900px) {
+  .technologieCard {
+    width: 100%; 
+    min-height: 150px;
+    justify-content: center;
+  }
+
+    .progressContainer {
+        position: relative;
+        width: 200px; 
+    }
+}

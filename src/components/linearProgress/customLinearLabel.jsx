@@ -1,3 +1,4 @@
+"use client";
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -12,7 +13,7 @@ function LinearProgressWithLabel(props) {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Box sx={{ width: '100%', mr: 1}}>
-        <LinearProgress style={{borderRadius: "20px", height: "5px"}} variant="determinate" value={normalise(props.value)} />
+        <LinearProgress style={{borderRadius: "20px", height: "5px", width: "100%"}} variant="determinate" value={normalise(props.value)} />
       </Box>
       <Box sx={{ minWidth: 35 }}>
         <Typography variant="body2" sx={{ color: "var(--foreground)" }}>

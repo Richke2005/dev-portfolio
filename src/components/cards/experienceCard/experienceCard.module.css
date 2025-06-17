@@ -1,5 +1,7 @@
 .experienceCard {
-    max-width: 650px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%; 
     min-height: 300px;
     display: flex;
     flex-direction: column;

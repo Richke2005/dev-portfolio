@@ -1,4 +1,5 @@
 .sections {
+    visibility: hidden;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,6 +14,7 @@
 }
 
 .activeSection {
+    visibility: visible;
     transform: translateX(0);
     transition:
         visibility 1s cubic-bezier(1, 0, 0, 1),
