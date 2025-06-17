@@ -10,9 +10,14 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
 bun dev
 ```
+
+## How to use
+
+To use this project, you can modify the data files located in the `data/` folder. Simply edit or add files as needed to update the content displayed by the application.
+
+After making changes to the data files, save your modifications and reload the page in your browser to see the updates automatically reflected.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
