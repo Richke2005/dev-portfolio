@@ -1,15 +1,25 @@
 import React from 'react';
 import Section from '@/components/section/section';
-import profile from '@/data/profile/profile';
+import CustomizedSlider from '@/components/sliders/customizedSlider';
+import ExperienceCard from '@/components/cards/experienceCard/experienceCard';
+import experience from '@/data/experiences/experiences.js';
 
 
 export default function Education() {
     return (
         <Section title={"Formação & Experiências"} isAnimated={false}>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <h3>Graduação Em Ciência Da Computação</h3>
-                <p>Universidade Municipal São caetano Do Sul (USCS)</p>
-                <p>Conclusão: Dezembro de 2027</p>
+            <div style={{ width: 700 }}>
+                <CustomizedSlider
+                    slidesPerView={1}
+                    components={ experience.map((exp, index) => (
+                    <ExperienceCard
+                        key={index}
+                        title={exp.title}
+                        subTitle={exp.subTitle}
+                        period={`${exp.startYear} - ${exp.endYear}`}
+                        icon={exp.icon}
+                    />))}
+                />
             </div>
         </Section>
     );

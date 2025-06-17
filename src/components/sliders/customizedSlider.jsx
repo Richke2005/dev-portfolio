@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react';
+"use client";
+import React from 'react';
 // Import Swiper React components
 import PropTypes from 'prop-types';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -19,12 +20,12 @@ import styles from "./customizedSlider.module.css";
  * @param {React.ComponentType[]} props.components - An array of React component types to be rendered as individual slides.
  * @returns {JSX.Element} The rendered Swiper slider containing the provided components as slides.
  */
-function CustomizedSlider({images, components}) {
+function CustomizedSlider({images, components, slidesPerView = 1}) {
   return (
     <>
       <Swiper  
         navigation={true}
-        slidesPerView={1}
+        slidesPerView={slidesPerView}
         modules={[Navigation]} 
         className="mySwiper">
           
@@ -40,7 +41,7 @@ function CustomizedSlider({images, components}) {
               components.map((Component, index) => (
                 <SwiperSlide key={index} style={{display: 'flex', justifyContent: 'center'}}>
                   <div className={`${styles.slideContent}`}>
-                    <Component />
+                    {Component} 
                   </div>
                 </SwiperSlide>
               ))

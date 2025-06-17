@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./page.module.css";
 import Profile from "../components/cards/profileCard/profile.jsx";
-import TopBar from "@/components/topBar/topBar.jsx";
 import Button from "@/components/buttons/button.jsx";
 import LinkGroup from "@/components/buttonGroup/socialLinks/linkGroup.jsx";
 import profileData from "../data/profile/profile.js";
@@ -12,6 +11,7 @@ import Education from "@/patterns/education/education.jsx";
 import Contact from "@/patterns/contact/contact";
 
 
+
 export default function Home() {
   return <div className={styles.page}>
       <div className={styles.centralized}>
@@ -19,6 +19,8 @@ export default function Home() {
           image={profileData.image}
           name={profileData.name} 
           bio={profileData.bio}
+          country={profileData.country}
+          city={profileData.city}
         >
           {//Todo try to modularize this component to use the new Card component
           }
@@ -47,6 +49,7 @@ export default function Home() {
           <Education/>
           <Contact/>
         </div>
+        
       </div>
     </div>
 }

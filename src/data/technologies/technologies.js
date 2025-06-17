@@ -1,63 +1,100 @@
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import Html5 from '../../../public/images/svgIcons/html5.svg';
+import CssIcon from '../../../public/images/svgIcons/css3.svg';
+import JavascriptIcon from '../../../public/images/svgIcons/javascript.svg';
+import ArduinoIcon from '../../../public/images/svgIcons/arduino.svg';
+import DjangoIcon from '../../../public/images/svgIcons/django.svg';
+import ExpressIcon from '../../../public/images/svgIcons/expressjs.svg';
+import GitIcon from '../../../public/images/svgIcons/git.svg';
+import GitHubIcon from '../../../public/images/svgIcons/github.svg';
+import Java from '../../../public/images/svgIcons/java.svg';
+import MongoDbIcon from '../../../public/images/svgIcons/mongodb.svg';
+import MysqlIcon from '../../../public/images/svgIcons/mysql.svg';
+import NextIcon from '../../../public/images/svgIcons/nextjs.svg';
+import Pandas from '../../../public/images/svgIcons/pandas.svg';
+import PythonIcon from '../../../public/images/svgIcons/python.svg';
+import ReactIcon from '../../../public/images/svgIcons/react.png';
+import Ubuntu from '../../../public/images/svgIcons/ubuntu.png';
 
 const technologies = [
     {
-        name: "JavaScript",
-        Icon: JavascriptIcon,
-        knowledge: 85
+        name: "HTML5",
+        Icon: Html5,
+        knowledge: 90
     },
     {
-        name: "React",
-        Icon: JavascriptIcon,
+        name: "CSS3",
+        Icon: CssIcon,
         knowledge: 80
     },
     {
-        name: "Next.js",
+        name: "Javascript",
         Icon: JavascriptIcon,
-        knowledge: 75
+        knowledge: 95
     },
     {
-        name: "Node.js",
-        Icon: JavascriptIcon,
-        knowledge: 90
+        name: "Arduino",
+        Icon: ArduinoIcon,
+        knowledge: 75
     },
     {
         name: "Express.js",
-        Icon: JavascriptIcon,
+        Icon: ExpressIcon,
         knowledge: 80
     },
     {
-        name: "MongoDB",
-        Icon: JavascriptIcon,
-        knowledge: 75
-    },
-    {
-        name: "PostgreSQL",
-        Icon: JavascriptIcon,
-        knowledge: 10
-    },
-    {
-        name: "HTML",
-        Icon: HtmlIcon,
-        knowledge: 100
-    },
-    {
-        name: "CSS",
-        Icon: CssIcon,
-        knowledge: 90
+        name: "Django",
+        Icon: DjangoIcon,
+        knowledge: 40
     },
     {
         name: "Git",
-        Icon: JavascriptIcon,
-        knowledge: 80
+        Icon: GitIcon,
+        knowledge: 90
     },
     {
         name: "GitHub",
         Icon: GitHubIcon,
+        knowledge: 90
+    },
+    {
+        name: "Java",
+        Icon: Java,
+        knowledge: 65
+    },
+    {
+        name: "MongoDB",
+        Icon: MongoDbIcon,
+        knowledge: 90
+    },
+    {
+        name: "MySQL",
+        Icon: MysqlIcon,
+        knowledge: 95
+    },
+    {
+        name: "Next.js",
+        Icon: NextIcon,
+        knowledge: 75
+    },
+    {
+        name: "Pandas",
+        Icon: Pandas,
+        knowledge: 30
+    },
+    {
+        name: "Python",
+        Icon: PythonIcon,
         knowledge: 80
+    },
+    {
+        name: "React.js",
+        Icon: ReactIcon,
+        knowledge: 85
+    },
+    {
+        name: "Ubuntu",
+        Icon: Ubuntu,
+        knowledge: 95
     }
 ];
 

@@ -16,6 +16,9 @@ export default function ContacForm({onChange}) {
     emailService.emailFrom(name, email, message)
     .then(response => {
       alert("Email Enviado Com Sucesso!");
+      setName('');
+      setEmail('');
+      setMessage('');
     }).catch(error => {
       console.error(`Erro ao enviar email: ${error}`);
     });

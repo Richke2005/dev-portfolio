@@ -1,10 +1,11 @@
 "use client";
 import React from 'react';
 import styles from './technologieCard.module.css';
+import Image from 'next/image';
 import CustomLinearLabel from '@/components/linearProgress/customLinearLabel.jsx';
 import PropTypes from 'prop-types';
 
-const TechnologieCard = ({ name, iconImage, knowledge}) => {
+const TechnologieCard = ({ name, Icon, knowledge}) => {
     const [windowWidth, setWindowWidth] = React.useState({
             width: undefined,
             height: undefined
@@ -24,10 +25,10 @@ const TechnologieCard = ({ name, iconImage, knowledge}) => {
 
     return (
     <div className={styles.technologieCard}>
-        {iconImage}
+        <Image src={Icon} alt={`Image: ${name}`} style={{width: 50, height: 50}}/>
         <div style={{marginLeft: "10px"}}>
             <h3>{name}</h3>
-            <div className={styles.progressContainer} style={{width: windowWidth.width < 800 ? 5/6 * windowWidth.width : "250px"}}>
+            <div className={styles.progressContainer} style={{width: windowWidth.width < 800 ? 5/6 * windowWidth.width : "200px"}}>
                 <CustomLinearLabel
                     finalvalue={knowledge}
                 />
