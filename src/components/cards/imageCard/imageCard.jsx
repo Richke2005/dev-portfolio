@@ -43,6 +43,9 @@ const ImageCard = ({title, description, tags, coverImage, projectImages, size })
         open={open} 
         onClose={handleClose}>
         <CustomizedSlider
+          centeredSlides={true}
+          slidesPerView={1}
+          spaceBetween={20}
          images={projectImages}/>
      </CustomizedDialogs>
     </React.Fragment>

@@ -20,40 +20,39 @@ import styles from "./customizedSlider.module.css";
  * @param {React.ComponentType[]} props.components - An array of React component types to be rendered as individual slides.
  * @returns {JSX.Element} The rendered Swiper slider containing the provided components as slides.
  */
-function CustomizedSlider({images, components, slidesPerView = 1}) {
+function CustomizedSlider({ images = [], components = [], slidesPerView = 1, ...props }) {
   return (
-    <>
-      <Swiper  
-        navigation={true}
-        slidesPerView={slidesPerView}
-        modules={[Navigation]} 
-        className="mySwiper">
-          
-            {images && images.length > 0 ? (
-              images.map((image, index) => (
-                <SwiperSlide key={index} style={{display: 'flex', justifyContent: 'center'}}>
-                  <div className={`${styles.slideContent}`}>
-                    <Image src={image} alt={`Slide ${index + 1}`} className={`${styles.image}`}/>
-                  </div>
-                </SwiperSlide>
-              ))
-            ) : (components && components.length > 0 ? (
-              components.map((Component, index) => (
-                <SwiperSlide key={index} style={{display: 'flex', justifyContent: 'center'}}>
-                  <div className={`${styles.slideContent}`}>
-                    {Component} 
-                  </div>
-                </SwiperSlide>
-              ))
-            ) : (
-              <SwiperSlide style={{display: 'flex', justifyContent: 'center'}}>
-                <div className={`${styles.slideContent}`}>
-                  <h2>No content available</h2>
-                </div>
-              </SwiperSlide>
-            ))}
-      </Swiper>
-    </>
+    <Swiper
+      {...props}
+      style={{ width: '100%' }}
+      slidesPerView={slidesPerView}
+      modules={[Navigation]}
+      className="mySwiper"
+    >
+      {images && images.length > 0 ? (
+        images.map((image, index) => (
+          <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className={styles.slideContent}>
+              <Image src={image} alt={`Slide ${index + 1}`} className={styles.image} />
+            </div>
+          </SwiperSlide>
+        ))
+      ) : components && components.length > 0 ? (
+        components.map((Component, index) => (
+          <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className={styles.slideContent}>
+              {Component}
+            </div>
+          </SwiperSlide>
+        ))
+      ) : (
+        <SwiperSlide style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className={styles.slideContent}>
+            <h2>No content available</h2>
+          </div>
+        </SwiperSlide>
+      )}
+    </Swiper>
   );
 }
 

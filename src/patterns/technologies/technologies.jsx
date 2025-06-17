@@ -6,7 +6,7 @@ import technologies from '@/data/technologies/technologies.js';
 
 export default function Technologies() {
     return (
-        <Section title={"Coding Skills"} isAnimated={false}>
+        <Section title={"Coding Skills"} isAnimated={true}>
           <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between"}}>
             {technologies.map((tech, index) => (
                 <TechnologieCard 

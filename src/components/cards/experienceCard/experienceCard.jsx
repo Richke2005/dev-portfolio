@@ -1,8 +1,10 @@
+
 import React from "react";
 import styles from "./experienceCard.module.css"
 import Image from "next/image";
 
 export default function ExperienceCard({ icon, title, subTitle, desc, period, cardStyle, titleStyle, textStyle, children }) {
+
     return(
         <div className={styles.experienceCard}>
             <div>

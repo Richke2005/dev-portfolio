@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Section from '@/components/section/section';
 import CustomizedSlider from '@/components/sliders/customizedSlider';
@@ -6,11 +7,32 @@ import experience from '@/data/experiences/experiences.js';
 
 
 export default function Education() {
+    const [windowWidth, setWindowWidth] = React.useState({
+            width: undefined,
+            height: undefined
+        });
+    
+        React.useEffect(()=>{
+            function handleResize() {
+                setWindowWidth({
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                });
+            }
+            handleResize(); // Set initial size
+    
+            window.addEventListener("resize", handleResize);
+        }, []);
+
     return (
-        <Section title={"Formação & Experiências"} isAnimated={false}>
-            <div style={{ width: 700 }}>
+        <Section title={"Formação & Experiências"} isAnimated={true}>
+            <div style={{ width: windowWidth.width < 800 ? 5/6 * windowWidth.width : "700px", margin: "0 auto" }}>
                 <CustomizedSlider
-                    slidesPerView={1}
+                    slidesPerView={ windowWidth.width < 800 ? 1 : 2}
+                    spaceBetween={20}
+                    pagination={{ clickable: true, el: "s" }}
+                    navigation={true}
+                    autoplay={{ delay: 1000, disableOnInteraction: false }}
                     components={ experience.map((exp, index) => (
                     <ExperienceCard
                         key={index}
