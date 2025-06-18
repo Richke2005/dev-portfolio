@@ -17,7 +17,7 @@ const projects = [
     },
     {
         title: "Sistema de Gestão Escolar",
-        description: "The project aims to simplify the organizational and logistical processes of the Pathfinders community in a church. It consists of a mobile application that facilitates interaction between Pathfinders and their classes, units, and club, allowing for the visualization and projection of progress in various activities. The app does not seek to replace but rather to enhance the existing work by providing individual tracking throughout the year. Additionally, the platform will include a community of clubs, allowing members to share activities and different approaches to specialties.",
+        description: `A Educação de Jovens e Adultos (EJA) enfrenta desafios históricos como evasão escolar, desigualdade social e escassez de recursos. Pensando nisso, este projeto visa o desenvolvimento de uma plataforma inteligente e integrada para apoiar instituições de ensino no gerenciamento escolar, detecção de riscos e comunicação ativa com os alunos, promovendo a permanência e o sucesso educacional.`,
         coverImage: SGECover,
         projectImages: [SGECover, SGECover2, SGECover3],
         tags: ["Django", "Mysql", "BootsTrap", "HTML5", "CSS", "JavaScript"],
