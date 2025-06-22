@@ -12,7 +12,7 @@ const profile = {
     about: `Desenvolver vai muito além de escrever código — é entender pessoas, resolver problemas e criar soluções que fazem sentido. Sou técnico em Desenvolvimento de Sistemas, estudo Ciência da Computação e estou sempre em busca de novos aprendizados. Quer tirar sua ideia do papel? Fica à vontade pra me chamar!`,
     city: "São Paulo",
     country: "Brasil",
-    resumeLink: "https://drive.google.com/file/d/16nNGXQvJuirQ95WckVPNTfJ3A3mgXQza/view?usp=sharing",
+    resumeLink: "https://drive.google.com/file/d/1BOu2-eApo8O292FQfzR-stF4KhcJg1qG/view?usp=sharing",
     socialMedias: [
         {
             name: "Instagram",
