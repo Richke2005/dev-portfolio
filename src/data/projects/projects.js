@@ -2,6 +2,12 @@ import MyClubCover from "../../../public/images/projects/myClubApp/cover.png";
 import SGECover from "../../../public/images/projects/SGE/cover.png";
 import SGECover2 from "../../../public/images/projects/SGE/cover2.png";
 import SGECover3 from "../../../public/images/projects/SGE/cover3.png";
+import JovensCover from "../../../public/images/projects/jovensDaCentral/cover.png";
+import JovensCover1 from "../../../public/images/projects/jovensDaCentral/cover1.png";
+import JovensCover2 from "../../../public/images/projects/jovensDaCentral/cover2.png";
+import JovensCover3 from "../../../public/images/projects/jovensDaCentral/cover3.png";
+import JovensCover4 from "../../../public/images/projects/jovensDaCentral/cover4.png";
+import JovensCover5 from "../../../public/images/projects/jovensDaCentral/cover5.png";
 import SkillTechCover from "../../../public/images/projects/skillTechHub/cover.png";
 import MongoCover from "../../../public/images/projects/mongoAPI/cover.png";
 import FightingCarCover from "../../../public/images/projects/fightingCar/cover.png";
@@ -14,6 +20,14 @@ const projects = [
         projectImages: [MyClubCover],
         tags: ["React Native", "Paper", "express.js", "node.js", "MongoDB"],
         link: ""
+    },
+    {
+        title: "Sistema Jovens Da Central",
+        description: `O projeto "Sistema Jovens Da Central" é uma iniciativa para criar um sistema de gestão e acompanhamento das atividades dos jovens da igreja, promovendo a integração e o engajamento dos membros. Através de uma plataforma digital, será possível gerenciar eventos, atividades e a comunicação entre os jovens, facilitando a participação e o envolvimento de todos.`,
+        coverImage: JovensCover,
+        projectImages: [JovensCover, JovensCover1, JovensCover2, JovensCover3, JovensCover4, JovensCover5],
+        tags: ["Next.js", "MongoDB", "HTML5", "CSS", "Better Auth"],
+        link: "https://projeto-jovens.vercel.app/"
     },
     {
         title: "Sistema de Gestão Escolar",

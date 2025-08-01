@@ -37,6 +37,7 @@ export default function Projects() {
                     coverImage={project.coverImage} 
                     projectImages={project.projectImages}
                     tags={project.tags}
+                    link={project.link}
                     size={"big"}/>
             } else{
             return <ImageCard
@@ -46,6 +47,7 @@ export default function Projects() {
                     coverImage={project.coverImage} 
                     projectImages={project.projectImages}
                     tags={project.tags}
+                    link={project.link}
                     size={"medium"}/>
             }
         })}

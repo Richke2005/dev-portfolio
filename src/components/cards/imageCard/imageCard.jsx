@@ -5,6 +5,7 @@ import styles from "./imageCard.module.css";
 import Button from "@/components/buttons/button.jsx";
 import CustomizedDialogs from "@/components/dialogs/customizedDialog.jsx";
 import CustomizedSlider from "@/components/sliders/normalSlider/normalSlider.jsx";
+import Link from "next/link";
 
 const ImageCard = ({title, description, tags, coverImage, projectImages, size })=>{
     const [open, setOpen] = React.useState(false);
