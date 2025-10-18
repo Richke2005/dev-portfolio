@@ -8,7 +8,7 @@ import EmailIcon from '@mui/icons-material/Email';
 const profile = {
     name: "Richard Carvalho",
     image: image,
-    bio: "FullStack Software Developer",
+    bio: "Software Engineer",
     about: `Desenvolver vai muito além de escrever código — é entender pessoas, resolver problemas e criar soluções que fazem sentido. Sou técnico em Desenvolvimento de Sistemas, estudo Ciência da Computação e estou sempre em busca de novos aprendizados. Quer tirar sua ideia do papel? Fica à vontade pra me chamar!`,
     city: "São Paulo",
     country: "Brasil",
