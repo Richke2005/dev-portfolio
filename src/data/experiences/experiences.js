@@ -32,9 +32,9 @@
   {
     icon: WorkIcon,
     title: "Desenvolvedor Backend",
-    subTitle: "Universidade Municipal de São Caetano do Sul",
-    startYear: 2024,
-    endYear: 2024
+    subTitle: "GFT Technologies - Desenvolvimento e manutenção em sistemas Bancários",
+    startYear: 2025,
+    endYear: "Current"
   },
 ]
 
