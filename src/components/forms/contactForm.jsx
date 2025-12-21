@@ -48,11 +48,11 @@ export default function ContacForm({onChange}) {
       autoComplete="off"
     >
       <TextField
-        label={"Nome"}
+        label={"Name"}
         type={"text"}
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder={"Digite seu nome"}
+        placeholder={"Type your name"}
         variant="outlined"
         fullWidth={true}
         required={true}
@@ -62,17 +62,17 @@ export default function ContacForm({onChange}) {
         type={"email"}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder={"Digite seu email"}
+        placeholder={"Type your email"}
         variant="outlined"
         fullWidth={true}
         required={true}
       />
       <TextField
-        label={"Mensagem"}
+        label={"Message"}
         type={"text"}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        placeholder={"Digite sua mensagem"}
+        placeholder={"Type your message"}
         variant="outlined"
         fullWidth={true}
         multiline={true}
@@ -83,7 +83,7 @@ export default function ContacForm({onChange}) {
         <Button
         onClick={handleSendEmail}
         shape="contained"
-        >Enviar</Button>
+        >Send</Button>
       </div>
     </Box>
   );

@@ -65,15 +65,15 @@ export default function TopBar() {
                     </LinkButton>
                 </li>
 
-                {/* <li className={styles.icon}>
+                {<li className={styles.icon}>
                     <LinkButton 
                         href="/contact"
                         color="primary"
                         shape="transparent" 
-                        name="Contato">
+                        name="Contact">
                     <EmailIcon />
                     </LinkButton>
-                </li> */}
+                </li> }
             </ul>
         </div>
       </div>

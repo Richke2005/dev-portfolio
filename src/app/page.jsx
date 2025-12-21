@@ -13,6 +13,7 @@ export default function Home() {
           <Projects/>
           <Technologies/>
           <Education/>
+          <Contact/>
         </RightContent>
     </>
 }
