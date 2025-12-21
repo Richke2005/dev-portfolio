@@ -26,7 +26,7 @@ export default function Projects() {
         
         }, []);
 
-    return<Section title={"Projetos Recentes"} isAnimated={true}>
+    return<Section title={"Recent Projects"} isAnimated={true}>
     <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
         {projects.map((project, index) => {
             if(index === 0  || index % 3 === 0 || windowWidth.width < 800){

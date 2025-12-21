@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
                     shape="contained" 
                     name="Currículo"
                   >
-                    Baixar Currículo
+                    Download resume
                   </LinkButton>
                 </div>
               </div>

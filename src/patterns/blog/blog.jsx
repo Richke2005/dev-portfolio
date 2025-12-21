@@ -5,7 +5,7 @@ import blog from '@/data/blog/blog.js';
 
 export default function Blog() {
     return (
-      <Section title={"Meus Pensamentos"} isAnimated={true}>
+      <Section title={"My Thoughts"} isAnimated={true}>
         <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "center" }}>
           {blog.map(article => (
             <BlogCard 

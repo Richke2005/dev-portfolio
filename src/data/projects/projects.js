@@ -13,62 +13,55 @@ import MongoCover from "../../../public/images/projects/mongoAPI/cover.png";
 import FightingCarCover from "../../../public/images/projects/fightingCar/cover.png";
 
 const projects = [
-      {
-        title: "My Club App",
-        description: `O projeto visa facilitar a organização e a logística da comunidade de Desbravadores em uma igreja, por meio de um aplicativo móvel. A ferramenta permite o acompanhamento individual do progresso dos membros em suas classes, unidades e clube, sem substituir, mas complementando o trabalho já realizado. Além disso, a plataforma contará com uma comunidade de clubes para compartilhamento de atividades e abordagens sobre especialidades.`,
-        coverImage: MyClubCover,
-        projectImages: [MyClubCover],
-        tags: ["React Native", "Paper", "express.js", "node.js", "MongoDB"],
-        link: ""
-    },
-    {
-        title: "Sistema Jovens Da Central",
-        description: `O projeto "Sistema Jovens Da Central" é uma iniciativa para criar um sistema de gestão e acompanhamento das atividades dos jovens da igreja, promovendo a integração e o engajamento dos membros. Através de uma plataforma digital, será possível gerenciar eventos, atividades e a comunicação entre os jovens, facilitando a participação e o envolvimento de todos.`,
-        coverImage: JovensCover,
-        projectImages: [JovensCover, JovensCover1, JovensCover2, JovensCover3, JovensCover4, JovensCover5],
-        tags: ["Next.js", "MongoDB", "HTML5", "CSS", "Better Auth"],
-        link: "https://projeto-jovens.vercel.app/"
-    },
-    {
-        title: "Sistema de Gestão Escolar",
-        description: `A Educação de Jovens e Adultos (EJA) enfrenta desafios históricos como evasão escolar, desigualdade social e escassez de recursos. Pensando nisso, este projeto visa o desenvolvimento de uma plataforma inteligente e integrada para apoiar instituições de ensino no gerenciamento escolar, detecção de riscos e comunicação ativa com os alunos, promovendo a permanência e o sucesso educacional.`,
-        coverImage: SGECover,
-        projectImages: [SGECover, SGECover2, SGECover3],
-        tags: ["Django", "Mysql", "BootsTrap", "HTML5", "CSS", "JavaScript"],
-        link: ""
-    },
-    {
-        title: "Skilltech Hub",
-        description: `A plataforma de treinamento industrial SkillTechHub é um sistema virtual de aprendizado que tem como objetivo capacitar profissionais para atuarem em ambientes industriais. Através dela, é possível simular situações reais de trabalho, proporcionando um treinamento mais eficaz e seguro para seus colaboradores. A plataforma é composta por uma interface interativa e intuitiva, que permite aos usuários vivenciarem diferentes cenários e desafios. Ela também conta com conteúdo teóricos e práticos, além de recursos audiovisuais que auxiliam no aprendizado.`,
-        coverImage: SkillTechCover,
-        projectImages: [SkillTechCover],
-        tags: ["HTML5", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
-        link: ""
-    },
-    {
-        title: "Schemaless API",
-        description: `Este projeto consiste no desenvolvimento de uma API utilizando o banco de dados MongoDB, aproveitando o modelo NoSQL schema-less que ele oferece. A API foi projetada para proporcionar flexibilidade no armazenamento de dados, permitindo alterações na estrutura sem a necessidade de redefinir esquemas rígidos. Esse modelo é ideal para lidar com dados heterogêneos ou em constante evolução.
+{
+  title: "My Club App",
+  description: "The project aims to facilitate the organization and logistics of the Pathfinder community within a church through a mobile application. The tool allows individual tracking of members' progress in their classes, units, and club, not replacing but complementing the work already carried out. In addition, the platform will feature a club community for sharing activities and approaches related to specialties.",
+  coverImage: MyClubCover,
+  projectImages: [MyClubCover],
+  tags: ["React Native", "Paper", "express.js", "node.js", "MongoDB"],
+  link: ""
+},
+{
+  title: "Central Youth System",
+  description: "The \"Central Youth System\" project is an initiative to create a management and monitoring system for church youth activities, promoting integration and engagement among members. Through a digital platform, it will be possible to manage events, activities, and communication among young people, facilitating participation and involvement for everyone.",
+  coverImage: JovensCover,
+  projectImages: [JovensCover, JovensCover1, JovensCover2, JovensCover3, JovensCover4, JovensCover5],
+  tags: ["Next.js", "MongoDB", "HTML5", "CSS", "Better Auth"],
+  link: "https://projeto-jovens.vercel.app/"
+},
+{
+  title: "School Management System",
+  description: "Youth and Adult Education (EJA) faces historical challenges such as school dropout, social inequality, and scarcity of resources. With this in mind, this project aims to develop an intelligent and integrated platform to support educational institutions in school management, risk detection, and active communication with students, promoting retention and educational success.",
+  coverImage: SGECover,
+  projectImages: [SGECover, SGECover2, SGECover3],
+  tags: ["Django", "MySQL", "Bootstrap", "HTML5", "CSS", "JavaScript"],
+  link: ""
+},
+{
+  title: "Skilltech Hub",
+  description: "The SkillTechHub industrial training platform is a virtual learning system designed to train professionals to work in industrial environments. Through it, it is possible to simulate real work situations, providing more effective and safer training for employees. The platform features an interactive and intuitive interface that allows users to experience different scenarios and challenges. It also includes theoretical and practical content, as well as audiovisual resources that support learning.",
+  coverImage: SkillTechCover,
+  projectImages: [SkillTechCover],
+  tags: ["HTML5", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
+  link: ""
+},
+{
+  title: "Schemaless API",
+  description: "This project consists of developing an API using the MongoDB database, leveraging the schema-less NoSQL model it offers. The API was designed to provide flexibility in data storage, allowing structural changes without the need to redefine rigid schemas. This model is ideal for handling heterogeneous or constantly evolving data.\n\nThe API will be responsible for efficiently managing CRUD (Create, Read, Update, Delete) operations, with a focus on scalability and ease of integration with other systems. In addition, best security and performance practices will be implemented to ensure system robustness.",
+  coverImage: MongoCover,
+  projectImages: [MongoCover],
+  tags: ["MVC", "express.js", "MongoDB", "mongoose"],
+  link: ""
+},
+{
+  title: "Arduino Fighting Car",
+  description: "The \"Arduino Fighting Car\" project is an educational initiative that combines mechanics, electronics, and programming to create a remotely controlled combat car. The goal is to develop a functional prototype that can be used in competitions, training sessions, and technical demonstrations.\n\nProject Objectives:\n- provide a practical platform for learning mechatronics concepts,\n- explore new technologies and remote control methods, and\n- participate in robotics competitions and showcase the prototype’s capabilities.",
+  coverImage: FightingCarCover,
+  projectImages: [FightingCarCover],
+  tags: ["Arduino", "C++", "Electronics", "Robotics", "Mechanical"],
+  link: ""
+}
 
-        A API será responsável por gerenciar operações CRUD (Create, Read, Update, Delete) de maneira eficiente, com foco na escalabilidade e na simplicidade na integração com outros sistemas. Além disso, boas práticas de segurança e desempenho serão implementadas para garantir a robustez do sistema.`,
-        coverImage: MongoCover,
-        projectImages: [MongoCover],
-        tags: ["MVC", "express.js", "MongoDB", "mongoose"],
-        link: ""
-    },
-
-    {
-        title: "Arduino Fighting Car",
-        description: `O projeto "Arduino Fighting Car" é uma iniciativa educacional que combina mecânica, eletrônica e programação para criar um carro de combate controlado remotamente. O objetivo é desenvolver um protótipo funcional que possa ser utilizado em competições, treinamentos e demonstrações técnicas.
-
-        Objetivos do Projeto: 
-        proporcionar uma plataforma prática para o aprendizado de conceitos de mecatrônica,
-        explorar novas tecnologias e métodos de controle remoto e
-        participar de competições de robótica e mostrar as capacidades do protótipo.`,
-        coverImage: FightingCarCover,
-        projectImages: [FightingCarCover],
-        tags: ["Arduino", "C++", "Electronics", "Robotics", "Mechanical"],
-        link: ""
-    }
 ]
 
 export default projects;

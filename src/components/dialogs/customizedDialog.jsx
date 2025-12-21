@@ -59,7 +59,7 @@ function CustomizedDialogs({title, open, onClose, description, children}) {
       </IconButton>
       <DialogContent dividers>
         {children}
-        <h2 style={{ marginBottom: "20px" }}>📝 Descrição Do <strong style={{ color: "var(--primary)" }}>Projeto</strong></h2>
+        <h2 style={{ marginBottom: "20px" }}>📝Project<strong style={{ color: "var(--primary)" }}> description</strong></h2>
         <Typography gutterBottom>
           {description}
         </Typography>

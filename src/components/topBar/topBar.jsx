@@ -28,7 +28,7 @@ export default function TopBar() {
                     href="/projects"
                         color="primary" 
                         shape="transparent" 
-                        name="Projetos">
+                        name="Projects">
                     <FolderIcon />
                     </LinkButton>
                 </li>
@@ -49,7 +49,7 @@ export default function TopBar() {
                         href="/education"
                         color="primary"
                         shape="transparent" 
-                        name="Formação">
+                        name="Education">
                     <SchoolIcon />
                     </LinkButton>
                 </li>

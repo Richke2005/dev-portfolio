@@ -6,7 +6,7 @@ import experience from '@/data/experiences/experiences.js';
 
 export default function Education() {
     return (
-        <Section title={"Formação & Experiências"} isAnimated={true}>
+        <Section title={"Education & Experience"} isAnimated={true}>
             <div style={{position: "relative", width: "100%"}}>
                 <SliderCoverFlow slidesPerView={2} components={experience.map((exp, index) => (
                 <ExperienceCard

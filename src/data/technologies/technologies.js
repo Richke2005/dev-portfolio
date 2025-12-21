@@ -1,9 +1,11 @@
 import Html5 from '../../../public/images/svgIcons/html5.svg';
 import CssIcon from '../../../public/images/svgIcons/css3.svg';
 import JavascriptIcon from '../../../public/images/svgIcons/javascript.svg';
+import TypescriptIcon from '../../../public/images/svgIcons/typescript.svg';
 import ArduinoIcon from '../../../public/images/svgIcons/arduino.svg';
 import DjangoIcon from '../../../public/images/svgIcons/django.svg';
 import ExpressIcon from '../../../public/images/svgIcons/expressjs.svg';
+import AngularIcon from '../../../public/images/svgIcons/angular.svg';
 import GitIcon from '../../../public/images/svgIcons/git.svg';
 import GitHubIcon from '../../../public/images/svgIcons/github.svg';
 import Java from '../../../public/images/svgIcons/java.svg';
@@ -29,17 +31,27 @@ const technologies = [
     {
         name: "Javascript",
         Icon: JavascriptIcon,
-        knowledge: 95
+        knowledge: 97
+    },
+    {
+        name: "Typescript",
+        Icon: TypescriptIcon,
+        knowledge: 85
     },
     {
         name: "Arduino",
         Icon: ArduinoIcon,
-        knowledge: 75
+        knowledge: 80
     },
     {
         name: "Express.js",
         Icon: ExpressIcon,
-        knowledge: 80
+        knowledge: 90
+    },
+    {
+        name: "Angular",
+        Icon: AngularIcon,
+        knowledge: 70
     },
     {
         name: "Django",
@@ -49,7 +61,7 @@ const technologies = [
     {
         name: "Git",
         Icon: GitIcon,
-        knowledge: 90
+        knowledge: 95
     },
     {
         name: "GitHub",
@@ -59,7 +71,7 @@ const technologies = [
     {
         name: "Java",
         Icon: Java,
-        knowledge: 65
+        knowledge: 85
     },
     {
         name: "MongoDB",
@@ -74,7 +86,7 @@ const technologies = [
     {
         name: "Next.js",
         Icon: NextIcon,
-        knowledge: 75
+        knowledge: 80
     },
     {
         name: "Pandas",
@@ -89,7 +101,7 @@ const technologies = [
     {
         name: "React.js",
         Icon: ReactIcon,
-        knowledge: 85
+        knowledge: 90
     },
     {
         name: "Ubuntu",

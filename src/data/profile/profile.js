@@ -1,4 +1,4 @@
-import image from "../../../public/images/profile/profile.jpg";
+import Profile from "../../../public/images/profile/profile.jpg";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -7,11 +7,11 @@ import EmailIcon from '@mui/icons-material/Email';
 
 const profile = {
     name: "Richard Carvalho",
-    image: image,
+    image: Profile,
     bio: "Software Engineer",
-    about: `Desenvolver vai muito além de escrever código — é entender pessoas, resolver problemas e criar soluções que fazem sentido. Sou técnico em Desenvolvimento de Sistemas, estudo Ciência da Computação e estou sempre em busca de novos aprendizados. Quer tirar sua ideia do papel? Fica à vontade pra me chamar!`,
+    about: `Developing goes far beyond writing code — it's about understanding people, solving problems, and creating solutions that make sense. I'm a Systems Development technician, studying Computer Science, and always seeking new knowledge. Want to bring your idea to life? Feel free to reach out!`,
     city: "São Paulo",
-    country: "Brasil",
+    country: "Brazil",
     resumeLink: "https://drive.google.com/file/d/1yrwXKZ2yIsPWuIjtTOhKreqzfRoIvPr2/view?usp=sharing",
     socialMedias: [
         {
@@ -20,7 +20,7 @@ const profile = {
             icon: InstagramIcon
         }, 
         {
-            name: "Linkedin",
+            name: "LinkedIn",
             url:"https://www.linkedin.com/in/richard-anjos/", 
             icon: LinkedInIcon
         },
