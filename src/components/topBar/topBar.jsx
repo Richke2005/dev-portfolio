@@ -16,9 +16,7 @@ export default function TopBar() {
     const [isLightTheme, setIsLightTheme] = useState(false);
 
     useEffect(() => {
-        const savedTheme = window.localStorage.getItem("theme");
-        const shouldUseLightTheme = savedTheme === "light";
-        document.documentElement.setAttribute("data-theme", shouldUseLightTheme ? "light" : "dark");
+        const shouldUseLightTheme = document.documentElement.getAttribute("data-theme") === "light";
         setIsLightTheme(shouldUseLightTheme);
     }, []);
 

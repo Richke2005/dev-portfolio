@@ -29,7 +29,14 @@ export default function RootLayout({ children }) {
   return <html lang="pt-br" suppressHydrationWarning>
       <head>
         <Script id="theme-initializer" strategy="beforeInteractive">
-          {`try{var theme=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",theme==="light"?"light":"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}`}
+          {`
+            try {
+              var savedTheme = localStorage.getItem("theme");
+              document.documentElement.setAttribute("data-theme", savedTheme === "light" ? "light" : "dark");
+            } catch (error) {
+              document.documentElement.setAttribute("data-theme", "dark");
+            }
+          `}
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}> 
