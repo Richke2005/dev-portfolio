@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
         <Script id="theme-initializer" strategy="beforeInteractive">
           {`
             try {
-              var savedTheme = localStorage.getItem("theme");
+              const savedTheme = localStorage.getItem("theme");
               document.documentElement.setAttribute("data-theme", savedTheme === "light" ? "light" : "dark");
-            } catch (error) {
+            } catch {
               document.documentElement.setAttribute("data-theme", "dark");
             }
           `}
