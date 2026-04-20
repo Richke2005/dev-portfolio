@@ -41,14 +41,14 @@
 }
 
 .sucess{
-    background-color: var(--sucess);
+    background-color: var(--success);
     color: var(--foreground);
-    border-color: var(--sucess);
+    border-color: var(--success);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sucess:hover{
-    background-color: var(--sucess);
+    background-color: var(--success);
     color: var(--foreground);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     cursor: pointer;
