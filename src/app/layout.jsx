@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import TopBar from "@/components/topBar/topBar.jsx";
 import Footer from "@/components/Footer/footer.jsx";
@@ -26,6 +27,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return <html lang="pt-br" suppressHydrationWarning>
+      <head>
+        <Script id="theme-initializer" strategy="beforeInteractive">
+          {`try{var theme=localStorage.getItem("theme");document.documentElement.setAttribute("data-theme",theme==="light"?"light":"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}`}
+        </Script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}> 
         <TopBar />
         <div className={'page'}>
