@@ -22,3 +22,19 @@
     list-style: none;
     margin-left: 10px;
 }
+
+.themeToggle {
+  border: none;
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.themeToggle:hover {
+  background-color: var(--layer2);
+}
