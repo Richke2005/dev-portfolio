@@ -40,6 +40,7 @@
     cursor: pointer;
 }
 
+.success,
 .sucess{
     background-color: var(--success);
     color: var(--foreground);
@@ -47,6 +48,7 @@
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.success:hover,
 .sucess:hover{
     background-color: var(--success);
     color: var(--foreground);

@@ -11,7 +11,7 @@ import { Tooltip } from '@mui/material';
  * @param {Object} props - Component props.
  * @param {string} props.name - The name of the button (not currently used).
  * @param {string} props.shape - The shape style of the button (contained, outlined, outdashed and transparent).
- * @param {string} props.color - The color style of the button (primary, secondary, thirdary, sucess).
+ * @param {string} props.color - The color style of the button (primary, secondary, thirdary, success).
  * @param {boolean} [props.disabled=false] - Whether the button is disabled.
  * @param {boolean} props.isActive - Initial active state of the button.
  * @param {React.ReactNode} props.children - The content (usually an icon) to display inside the button.
