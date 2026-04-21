@@ -56,9 +56,10 @@ function createOutput(lines) {
 export default function Terminal() {
   const inputRef = React.useRef(null);
   const outputRef = React.useRef(null);
+  const nextEntryIdRef = React.useRef(1);
 
   const [inputValue, setInputValue] = React.useState("");
-  const [history, setHistory] = React.useState([createOutput(startupLogs)]);
+  const [history, setHistory] = React.useState([{ id: 0, ...createOutput(startupLogs) }]);
   const [commandHistory, setCommandHistory] = React.useState([]);
   const [historyIndex, setHistoryIndex] = React.useState(-1);
 
@@ -71,7 +72,23 @@ export default function Terminal() {
   }, [history]);
 
   const appendEntries = React.useCallback((entries) => {
-    setHistory((previous) => [...previous, ...entries]);
+    const entriesWithIds = entries.map((entry) => {
+      const nextId = nextEntryIdRef.current;
+      nextEntryIdRef.current += 1;
+      return { id: nextId, ...entry };
+    });
+
+    setHistory((previous) => [...previous, ...entriesWithIds]);
+  }, []);
+
+  const openExternalLink = React.useCallback((url) => {
+    const openedWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (openedWindow) {
+      openedWindow.opener = null;
+      return true;
+    }
+
+    return false;
   }, []);
 
   const runCommand = React.useCallback(
@@ -107,15 +124,25 @@ export default function Terminal() {
           appendEntries([createOutput(careerTimeline)]);
           break;
         case "github":
-          window.open("https://github.com/Richke2005", "_blank", "noopener,noreferrer");
-          appendEntries([createOutput(["Opening GitHub profile..."])]);
+          appendEntries([
+            createOutput([
+              openExternalLink("https://github.com/Richke2005")
+                ? "Opening GitHub profile..."
+                : "Unable to open GitHub automatically. Please allow popups and try again.",
+            ]),
+          ]);
           break;
         case "linkedin":
-          window.open("https://www.linkedin.com/in/richard-anjos/", "_blank", "noopener,noreferrer");
-          appendEntries([createOutput(["Opening LinkedIn profile..."])]);
+          appendEntries([
+            createOutput([
+              openExternalLink("https://www.linkedin.com/in/richard-anjos/")
+                ? "Opening LinkedIn profile..."
+                : "Unable to open LinkedIn automatically. Please allow popups and try again.",
+            ]),
+          ]);
           break;
         case "contact":
-          appendEntries([createOutput(["Email: richardke18@gmail.com", "Let\'s build something impactful together."])]);
+          appendEntries([createOutput(["Email: richardke18@gmail.com", "Let's build something impactful together."])]);
           break;
         case "whoami":
           appendEntries([createOutput(["richard -> software engineer focused on backend, APIs and AI products."])]);
@@ -131,7 +158,7 @@ export default function Terminal() {
           break;
       }
     },
-    [appendEntries],
+    [appendEntries, openExternalLink],
   );
 
   function handleSubmit(event) {
@@ -186,19 +213,19 @@ export default function Terminal() {
     <Section title={"Interactive Terminal"} isAnimated>
       <div className={styles.terminal} onClick={() => inputRef.current?.focus()} role="presentation">
         <div className={styles.output}>
-          {history.map((entry, index) => {
+          {history.map((entry) => {
             if (entry.type === "command") {
               return (
-                <div className={styles.line} key={`command-${index}`}>
+                <div className={styles.line} key={`command-${entry.id}`}>
                   <span className={styles.prompt}>{prompt}</span> {entry.value}
                 </div>
               );
             }
 
             return (
-              <div className={styles.outputBlock} key={`output-${index}`}>
+              <div className={styles.outputBlock} key={`output-${entry.id}`}>
                 {entry.lines.map((line, lineIndex) => (
-                  <div className={styles.line} key={`line-${index}-${lineIndex}`}>
+                  <div className={styles.line} key={`line-${entry.id}-${lineIndex}`}>
                     {line}
                   </div>
                 ))}
