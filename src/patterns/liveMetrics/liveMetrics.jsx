@@ -14,8 +14,8 @@ export default function LiveMetrics() {
   return (
     <Section title={"Live Metrics"} isAnimated={true}>
       <div className={styles.metricsGrid}>
-        {metrics.map((metric) => (
-          <div key={metric} className={styles.metricCard}>
+        {metrics.map((metric, index) => (
+          <div key={`${metric}-${index}`} className={styles.metricCard}>
             {metric}
           </div>
         ))}

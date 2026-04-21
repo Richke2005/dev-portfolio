@@ -10,11 +10,13 @@ import Link from "next/link";
 const ImageCard = ({title, description, tags, coverImage, projectImages, size, liveDemo, github, caseStudy })=>{
     const [open, setOpen] = React.useState(false);
     const defaultSize = size || "big";
-    const projectLinks = [
-      { label: "Live Demo", href: liveDemo },
-      { label: "GitHub", href: github },
-      { label: "Case Study", href: caseStudy }
-    ].filter((projectLink) => typeof projectLink.href === "string" && projectLink.href.trim().length > 0);
+    const projectLinks = React.useMemo(() => (
+      [
+        { label: "Live Demo", href: liveDemo },
+        { label: "GitHub", href: github },
+        { label: "Case Study", href: caseStudy }
+      ].filter((projectLink) => typeof projectLink.href === "string" && projectLink.href.trim().length > 0)
+    ), [liveDemo, github, caseStudy]);
 
     const handleClickOpen = () => {
       setOpen(true);

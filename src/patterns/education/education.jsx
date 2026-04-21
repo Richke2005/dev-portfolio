@@ -27,7 +27,7 @@ export default function Education() {
             </div>
             <div className={styles.timeline}>
                 {milestones.map((milestone) => (
-                    <div key={milestone.year} className={styles.timelineItem}>
+                    <div key={`${milestone.year}-${milestone.title}`} className={styles.timelineItem}>
                         <strong>{milestone.year}</strong>
                         <p>{milestone.title}</p>
                     </div>
