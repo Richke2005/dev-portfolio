@@ -14,28 +14,34 @@ import FightingCarCover from "../../../public/images/projects/fightingCar/cover.
 
 const projects = [
 {
-  title: "My Club App",
-  description: "The project aims to facilitate the organization and logistics of the Pathfinder community within a church through a mobile application. The tool allows individual tracking of members' progress in their classes, units, and club, not replacing but complementing the work already carried out. In addition, the platform will feature a club community for sharing activities and approaches related to specialties.",
+  title: "CodePulse AI",
+  description: "Dashboard platform that analyzes software delivery metrics from repositories and turns engineering activity into clear AI-assisted insights for planning and decision making.",
   coverImage: MyClubCover,
   projectImages: [MyClubCover],
-  tags: ["React Native", "Paper", "express.js", "node.js", "MongoDB"],
-  link: ""
+  tags: ["React Native", "Node.js", "MongoDB", "AI", "Dashboard"],
+  liveDemo: "",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 },
 {
-  title: "Central Youth System",
-  description: "The \"Central Youth System\" project is an initiative to create a management and monitoring system for church youth activities, promoting integration and engagement among members. Through a digital platform, it will be possible to manage events, activities, and communication among young people, facilitating participation and involvement for everyone.",
+  title: "Banking Core APIs",
+  description: "Backend services for corporate banking flows with focus on stable integrations, migration support for legacy endpoints, and scalable microservice-friendly APIs.",
   coverImage: JovensCover,
   projectImages: [JovensCover, JovensCover1, JovensCover2, JovensCover3, JovensCover4, JovensCover5],
-  tags: ["Next.js", "MongoDB", "HTML5", "CSS", "Better Auth"],
-  link: "https://projeto-jovens.vercel.app/"
+  tags: ["Java", "Spring", "Microservices", "APIs", "Legacy Migration"],
+  liveDemo: "https://projeto-jovens.vercel.app/",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 },
 {
-  title: "School Management System",
-  description: "Youth and Adult Education (EJA) faces historical challenges such as school dropout, social inequality, and scarcity of resources. With this in mind, this project aims to develop an intelligent and integrated platform to support educational institutions in school management, risk detection, and active communication with students, promoting retention and educational success.",
+  title: "EduGuard AI",
+  description: "Predictive education platform designed to detect school dropout risk and automate proactive communication with students and guardians through intelligent workflows.",
   coverImage: SGECover,
   projectImages: [SGECover, SGECover2, SGECover3],
-  tags: ["Django", "MySQL", "Bootstrap", "HTML5", "CSS", "JavaScript"],
-  link: ""
+  tags: ["Python", "Django", "PostgreSQL", "AI", "Docker", "WhatsApp"],
+  liveDemo: "",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 },
 {
   title: "Skilltech Hub",
@@ -43,7 +49,9 @@ const projects = [
   coverImage: SkillTechCover,
   projectImages: [SkillTechCover],
   tags: ["HTML5", "CSS", "JavaScript", "Node.js", "Express.js", "MongoDB"],
-  link: ""
+  liveDemo: "",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 },
 {
   title: "Schemaless API",
@@ -51,7 +59,9 @@ const projects = [
   coverImage: MongoCover,
   projectImages: [MongoCover],
   tags: ["MVC", "express.js", "MongoDB", "mongoose"],
-  link: ""
+  liveDemo: "",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 },
 {
   title: "Arduino Fighting Car",
@@ -59,7 +69,9 @@ const projects = [
   coverImage: FightingCarCover,
   projectImages: [FightingCarCover],
   tags: ["Arduino", "C++", "Electronics", "Robotics", "Mechanical"],
-  link: ""
+  liveDemo: "",
+  github: "https://github.com/Richke2005",
+  caseStudy: ""
 }
 
 ]

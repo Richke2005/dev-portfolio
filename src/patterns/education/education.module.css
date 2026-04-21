@@ -1,0 +1,26 @@
+.timeline {
+  margin-top: 28px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 18px;
+}
+
+.timelineItem {
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18);
+}
+
+.timelineItem p {
+  color: var(--subtext);
+}

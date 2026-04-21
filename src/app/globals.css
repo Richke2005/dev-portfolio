@@ -1,9 +1,10 @@
 :root {
-  --background: #171717;
-  --foreground: #ffffff;
-  --layer1: rgb(39, 40, 41);
-  --layer2: rgb(94, 96, 99);
-  --primary: rgb(145, 75, 241);
+  --background: #0b0d10;
+  --foreground: #f5f7fa;
+  --layer1: #111318;
+  --layer2: #1a1f27;
+  --primary: #3b82f6;
+  --subtext: #9aa4b2;
   --secondary: rgb(0, 104, 26);
   --thirdary: rgb(192, 77, 0);
   --success: rgb(0, 104, 26);
@@ -16,6 +17,7 @@
   --layer1: #ffffff;
   --layer2: #dcdcdc;
   --primary: rgb(104, 55, 190);
+  --subtext: #475569;
   --secondary: rgb(0, 104, 26);
   --thirdary: rgb(192, 77, 0);
   --success: rgb(0, 104, 26);
@@ -42,6 +44,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-image: radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.12), transparent 30%);
 }
 
 * {
@@ -92,6 +95,24 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #111318;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111318;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 999px;
 }
 
 /* @media (prefers-color-scheme: dark) {

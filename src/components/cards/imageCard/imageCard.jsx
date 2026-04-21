@@ -7,9 +7,14 @@ import CustomizedDialogs from "@/components/dialogs/customizedDialog.jsx";
 import CustomizedSlider from "@/components/sliders/normalSlider/normalSlider.jsx";
 import Link from "next/link";
 
-const ImageCard = ({title, description, tags, coverImage, projectImages, size })=>{
+const ImageCard = ({title, description, tags, coverImage, projectImages, size, liveDemo, github, caseStudy })=>{
     const [open, setOpen] = React.useState(false);
     const defaultSize = size || "big";
+    const projectLinks = [
+      { label: "Live Demo", href: liveDemo },
+      { label: "GitHub", href: github },
+      { label: "Case Study", href: caseStudy }
+    ].filter((projectLink) => projectLink.href);
 
     const handleClickOpen = () => {
       setOpen(true);
@@ -24,6 +29,21 @@ const ImageCard = ({title, description, tags, coverImage, projectImages, size })
         <div className={styles.cardTitle}>
             <h2>{title}</h2>
         </div>
+        {projectLinks.length > 0 && (
+          <div className={styles.cardActions}>
+            {projectLinks.map((projectLink) => (
+              <Link
+                key={`${title}-${projectLink.label}`}
+                href={projectLink.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(event) => event.stopPropagation()}
+              >
+                {projectLink.label}
+              </Link>
+            ))}
+          </div>
+        )}
         <div className={styles.tags}>
             {tags && tags.map(tag=>(
               <div key={tag} style={{marginLeft: "10px", marginBottom: "10px"}}>
