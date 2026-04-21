@@ -128,7 +128,7 @@ export default function Terminal() {
             createOutput([
               openExternalLink("https://github.com/Richke2005")
                 ? "Opening GitHub profile..."
-                : "Unable to open GitHub automatically. Please allow popups and try again.",
+                : "",
             ]),
           ]);
           break;
@@ -137,7 +137,7 @@ export default function Terminal() {
             createOutput([
               openExternalLink("https://www.linkedin.com/in/richard-anjos/")
                 ? "Opening LinkedIn profile..."
-                : "Unable to open LinkedIn automatically. Please allow popups and try again.",
+                : "",
             ]),
           ]);
           break;

@@ -29,7 +29,7 @@ export default function TopBar() {
     }
 
     return<div className={styles.topBarContainer}>
-            <div style={{height: "50px"}}>
+            <div style={{ width: "40%", height: "50px"}}>
             <ul className={styles.topBar}>
                 <li className={styles.icon}>
                     <LinkButton 
@@ -37,6 +37,7 @@ export default function TopBar() {
                         color="primary" 
                         shape="transparent" 
                         name="Home"  
+                        
                         isActive={false}>
                     <HomeIcon />
                     </LinkButton>
@@ -84,7 +85,7 @@ export default function TopBar() {
                     </LinkButton>
                 </li>
 
-                {<li className={styles.icon}>
+                <li className={styles.icon}>
                     <LinkButton 
                         href="/contact"
                         color="primary"
@@ -92,7 +93,7 @@ export default function TopBar() {
                         name="Contact">
                     <EmailIcon />
                     </LinkButton>
-                </li> }
+                </li> 
 
                 <li className={styles.icon}>
                     <button
