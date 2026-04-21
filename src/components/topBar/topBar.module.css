@@ -53,6 +53,6 @@
 
 @media (max-width: 900px) {
   .topBarContent {
-    width: calc(100% - var(--horizontal-inset));
+    width: calc(100% - (2 * var(--horizontal-inset)));
   }
 }
