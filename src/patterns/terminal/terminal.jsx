@@ -189,7 +189,7 @@ export default function Terminal() {
           {history.map((entry, index) => {
             if (entry.type === "command") {
               return (
-                <div className={styles.line} key={`${entry.value}-${index}`}>
+                <div className={styles.line} key={`command-${index}`}>
                   <span className={styles.prompt}>{prompt}</span> {entry.value}
                 </div>
               );
@@ -198,7 +198,7 @@ export default function Terminal() {
             return (
               <div className={styles.outputBlock} key={`output-${index}`}>
                 {entry.lines.map((line, lineIndex) => (
-                  <div className={styles.line} key={`${line}-${lineIndex}`}>
+                  <div className={styles.line} key={`line-${index}-${lineIndex}`}>
                     {line}
                   </div>
                 ))}
