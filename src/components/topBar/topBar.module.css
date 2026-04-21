@@ -9,8 +9,10 @@
 }
 
 .topBarContent {
-  --mobile-horizontal-inset: 20px;
-  width: min(100%, 680px);
+  --horizontal-inset: 20px;
+  --topbar-max-width: 680px;
+  --topbar-icon-gap: 8px;
+  width: min(100%, var(--topbar-max-width));
 }
 
 .topBar{
@@ -19,7 +21,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: var(--topbar-icon-gap);
     margin-top: 12px;
     border-radius: 20px;
     padding: 0.5rem 1rem;
@@ -51,6 +53,6 @@
 
 @media (max-width: 900px) {
   .topBarContent {
-    width: calc(100% - var(--mobile-horizontal-inset));
+    width: calc(100% - var(--horizontal-inset));
   }
 }
