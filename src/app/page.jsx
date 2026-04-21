@@ -3,6 +3,7 @@ import RightContent from "@/components/rightContent/rightContent";
 import Hero from "@/patterns/hero/hero";
 import Projects from "@/patterns/projects/projects";
 import About from "@/patterns/about/about";
+import Terminal from "@/patterns/terminal/terminal";
 import Technologies from "@/patterns/technologies/technologies";
 import Education from "@/patterns/education/education.jsx";
 import LiveMetrics from "@/patterns/liveMetrics/liveMetrics";
@@ -14,6 +15,7 @@ export default function Home() {
         <RightContent>
           <Hero/>
           <About/>
+          <Terminal/>
           <div id="featured-projects">
             <Projects/>
           </div>
