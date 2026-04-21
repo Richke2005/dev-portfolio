@@ -14,7 +14,7 @@ const ImageCard = ({title, description, tags, coverImage, projectImages, size, l
       { label: "Live Demo", href: liveDemo },
       { label: "GitHub", href: github },
       { label: "Case Study", href: caseStudy }
-    ].filter((projectLink) => projectLink.href);
+    ].filter((projectLink) => typeof projectLink.href === "string" && projectLink.href.trim().length > 0);
 
     const handleClickOpen = () => {
       setOpen(true);
