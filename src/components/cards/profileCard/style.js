@@ -18,17 +18,17 @@ const styles = {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        color: "white",
+        color: "var(--foreground)",
 
     },
     name: {
         fontSize: "30px",
-        color: "white",
+        color: "var(--foreground)",
         marginBottom: "8px"
     },
     bio: {
         fontSize: "20px",
-        color: "rgb(216, 224, 226)"
+        color: "var(--foreground)",
     }
 }
 

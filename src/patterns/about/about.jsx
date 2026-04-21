@@ -10,7 +10,7 @@ export default function About() {
             </p>
             <p>{profileData.about}</p>
             <ul style={{ marginTop: "16px", marginLeft: "18px", color: "var(--subtext)", lineHeight: 1.8 }}>
-                <li>Banking systems and corporate APIs (Bradesco ecosystem)</li>
+                <li>Banking systems and corporate APIs</li>
                 <li>Microservices and legacy modernization</li>
                 <li>Production-ready integrations and automation workflows</li>
                 <li>Backend-first mindset with scalable architecture</li>

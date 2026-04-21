@@ -1,10 +1,11 @@
 :root {
-  --background: #0b0d10;
+  --background: #000000;
   --foreground: #f5f7fa;
   --layer1: #111318;
   --layer2: #1a1f27;
   --primary: #3b82f6;
   --subtext: #9aa4b2;
+  --bar-color: rgba(17, 19, 24, 0.82);
   --secondary: rgb(0, 104, 26);
   --thirdary: rgb(192, 77, 0);
   --success: rgb(0, 104, 26);
@@ -18,6 +19,7 @@
   --layer2: #dcdcdc;
   --primary: rgb(104, 55, 190);
   --subtext: #475569;
+  --bar-color: rgba(245, 245, 245, 0.82);
   --secondary: rgb(0, 104, 26);
   --thirdary: rgb(192, 77, 0);
   --success: rgb(0, 104, 26);

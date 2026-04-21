@@ -6,9 +6,9 @@ import experience from '@/data/experiences/experiences.js';
 import styles from './education.module.css';
 
 const milestones = [
-    { year: "2023", title: "Started programming" },
-    { year: "2024", title: "Computer Science journey" },
-    { year: "2025", title: "Production systems and banking projects" },
+    { year: "2019", title: "Started programming" },
+    { year: "2022", title: "Computer Science journey" },
+    { year: "2025", title: "Developing systems and banking projects" },
     { year: "2026", title: "AI + scalable architecture focus" }
 ];
 

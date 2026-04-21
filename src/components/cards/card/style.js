@@ -24,7 +24,7 @@ const styles =  {
     title:{
         fontSize: "24px",
         marginBottom: "8px",
-        color: "black"
+        color: "var(--foreground)"
     },
 
     text: {
