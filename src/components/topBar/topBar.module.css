@@ -1,9 +1,12 @@
 .topBarContainer {
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(12px);
 }
 
 .topBar{
@@ -11,10 +14,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 12px;
     border-radius: 20px;
     padding: 0.5rem 1rem;
-    background-color: var(--layer1);
+    background-color: rgba(17, 19, 24, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     width: 100%;
 }
 

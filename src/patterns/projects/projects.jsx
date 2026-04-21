@@ -3,9 +3,6 @@ import React from "react";
 import Section from "@/components/section/section.jsx";
 import ImageCard from "@/components/cards/imageCard/imageCard.jsx";
 import projects from "@/data/projects/projects.js";
-const tags = ["React Native", "express.js", "MongoDB"]
-
-
 
 export default function Projects() {
       const [windowWidth, setWindowWidth] = React.useState({
@@ -26,7 +23,7 @@ export default function Projects() {
         
         }, []);
 
-    return<Section title={"Recent Projects"} isAnimated={true}>
+    return<Section title={"Featured Projects"} isAnimated={true}>
     <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
         {projects.map((project, index) => {
             if(index === 0  || index % 3 === 0 || windowWidth.width < 800){
@@ -37,7 +34,9 @@ export default function Projects() {
                     coverImage={project.coverImage} 
                     projectImages={project.projectImages}
                     tags={project.tags}
-                    link={project.link}
+                    liveDemo={project.liveDemo}
+                    github={project.github}
+                    caseStudy={project.caseStudy}
                     size={"big"}/>
             } else{
             return <ImageCard
@@ -47,7 +46,9 @@ export default function Projects() {
                     coverImage={project.coverImage} 
                     projectImages={project.projectImages}
                     tags={project.tags}
-                    link={project.link}
+                    liveDemo={project.liveDemo}
+                    github={project.github}
+                    caseStudy={project.caseStudy}
                     size={"medium"}/>
             }
         })}

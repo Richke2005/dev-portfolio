@@ -8,8 +8,8 @@ import EmailIcon from '@mui/icons-material/Email';
 const profile = {
     name: "Richard Carvalho",
     image: Profile,
-    bio: "Software Engineer",
-    about: `Developing goes far beyond writing code — it's about understanding people, solving problems, and creating solutions that make sense. I'm a Systems Development technician, studying Computer Science, and always seeking new knowledge. Want to bring your idea to life? Feel free to reach out!`,
+    bio: "Software Engineer building intelligent systems",
+    about: `I engineer software that solves operational problems and scales reliably. My focus is building products with strong backend architecture, practical AI usage, and clear business impact.`,
     city: "São Paulo",
     country: "Brazil",
     resumeLink: "https://drive.google.com/file/d/1yrwXKZ2yIsPWuIjtTOhKreqzfRoIvPr2/view?usp=sharing",
