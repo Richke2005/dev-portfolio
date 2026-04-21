@@ -29,7 +29,7 @@ export default function TopBar() {
     }
 
     return<div className={styles.topBarContainer}>
-            <div style={{ width: "40%", height: "50px"}}>
+            <div className={styles.topBarContent}>
             <ul className={styles.topBar}>
                 <li className={styles.icon}>
                     <LinkButton 

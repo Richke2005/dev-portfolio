@@ -8,11 +8,17 @@
   justify-content: center;
 }
 
+.topBarContent {
+  width: min(100%, 680px);
+}
+
 .topBar{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4px;
     margin-top: 12px;
     border-radius: 20px;
     padding: 0.5rem 1rem;
@@ -23,7 +29,7 @@
 
 .icon {
     list-style: none;
-    margin-left: 10px;
+    margin: 0;
 }
 
 .themeToggle {
@@ -40,4 +46,10 @@
 
 .themeToggle:hover {
   background-color: var(--layer2);
+}
+
+@media (max-width: 900px) {
+  .topBarContent {
+    width: calc(100% - 20px);
+  }
 }
